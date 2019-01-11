@@ -1,0 +1,435 @@
+@font-face {
+	font-family: "Justicons";
+	src: url("../fonts/justicons.eot");
+	src: url("../fonts/justicons.eot#iefix") format("embedded-opentype"),
+	url("../fonts/justicons.woff") format("woff"),
+	url("../fonts/justicons.ttf") format("truetype"),
+	url("../fonts/justicons.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="justicons-"]:before, [class*=" justicons-"]:before,
+[class^="justicons-"]:after, [class*=" justicons-"]:after {   
+	font-family: Justicons;
+	font-style: normal;
+	line-height: 1;
+}.justicons-acceptance:before {
+	content: "\e000";
+}
+.justicons-add133:before {
+	content: "\e001";
+}
+.justicons-airplane82:before {
+	content: "\e002";
+}
+.justicons-anchor31:before {
+	content: "\e003";
+}
+.justicons-attachment13:before {
+	content: "\e004";
+}
+.justicons-attention5:before {
+	content: "\e005";
+}
+.justicons-back36:before {
+	content: "\e006";
+}
+.justicons-barbecue6:before {
+	content: "\e007";
+}
+.justicons-bars48:before {
+	content: "\e008";
+}
+.justicons-basketball38:before {
+	content: "\e009";
+}
+.justicons-bell37:before {
+	content: "\e00a";
+}
+.justicons-blank25:before {
+	content: "\e00b";
+}
+.justicons-bookmark26:before {
+	content: "\e00c";
+}
+.justicons-brush22:before {
+	content: "\e00d";
+}
+.justicons-chef24:before {
+	content: "\e00e";
+}
+.justicons-chronometer17:before {
+	content: "\e00f";
+}
+.justicons-circular210:before {
+	content: "\e010";
+}
+.justicons-circular212:before {
+	content: "\e011";
+}
+.justicons-clipboard66:before {
+	content: "\e012";
+}
+.justicons-clockwise2:before {
+	content: "\e013";
+}
+.justicons-close40:before {
+	content: "\e014";
+}
+.justicons-cloud246:before {
+	content: "\e015";
+}
+.justicons-cloud247:before {
+	content: "\e016";
+}
+.justicons-cloud248:before {
+	content: "\e017";
+}
+.justicons-cloud249:before {
+	content: "\e018";
+}
+.justicons-cloudy17:before {
+	content: "\e019";
+}
+.justicons-cloudy19:before {
+	content: "\e01a";
+}
+.justicons-cloudy20:before {
+	content: "\e01b";
+}
+.justicons-cloudy21:before {
+	content: "\e01c";
+}
+.justicons-cloudy22:before {
+	content: "\e01d";
+}
+.justicons-cold10:before {
+	content: "\e01e";
+}
+.justicons-commercial26:before {
+	content: "\e01f";
+}
+.justicons-compass79:before {
+	content: "\e020";
+}
+.justicons-cooking20:before {
+	content: "\e021";
+}
+.justicons-cupcake13:before {
+	content: "\e022";
+}
+.justicons-danger8:before {
+	content: "\e023";
+}
+.justicons-database43:before {
+	content: "\e024";
+}
+.justicons-diaphragm9:before {
+	content: "\e025";
+}
+.justicons-down53:before {
+	content: "\e026";
+}
+.justicons-download131:before {
+	content: "\e027";
+}
+.justicons-edit41:before {
+	content: "\e028";
+}
+.justicons-electrical14:before {
+	content: "\e029";
+}
+.justicons-empty31:before {
+	content: "\e02a";
+}
+.justicons-empty32:before {
+	content: "\e02b";
+}
+.justicons-equalization2:before {
+	content: "\e02c";
+}
+.justicons-favorites2:before {
+	content: "\e02d";
+}
+.justicons-file60:before {
+	content: "\e02e";
+}
+.justicons-first40:before {
+	content: "\e02f";
+}
+.justicons-flash22:before {
+	content: "\e030";
+}
+.justicons-flower109:before {
+	content: "\e031";
+}
+.justicons-focus7:before {
+	content: "\e032";
+}
+.justicons-fog8:before {
+	content: "\e033";
+}
+.justicons-folded32:before {
+	content: "\e034";
+}
+.justicons-folder167:before {
+	content: "\e035";
+}
+.justicons-game51:before {
+	content: "\e036";
+}
+.justicons-global24:before {
+	content: "\e037";
+}
+.justicons-hazelnut1:before {
+	content: "\e038";
+}
+.justicons-headphones30:before {
+	content: "\e039";
+}
+.justicons-heart279:before {
+	content: "\e03a";
+}
+.justicons-helm1:before {
+	content: "\e03b";
+}
+.justicons-home133:before {
+	content: "\e03c";
+}
+.justicons-information51:before {
+	content: "\e03d";
+}
+.justicons-internet33:before {
+	content: "\e03e";
+}
+.justicons-leaf57:before {
+	content: "\e03f";
+}
+.justicons-link49:before {
+	content: "\e040";
+}
+.justicons-liquid11:before {
+	content: "\e041";
+}
+.justicons-lock63:before {
+	content: "\e042";
+}
+.justicons-magnetic1:before {
+	content: "\e043";
+}
+.justicons-magnifier32:before {
+	content: "\e044";
+}
+.justicons-magnifier33:before {
+	content: "\e045";
+}
+.justicons-maps7:before {
+	content: "\e046";
+}
+.justicons-medal54:before {
+	content: "\e047";
+}
+.justicons-megaphone10:before {
+	content: "\e048";
+}
+.justicons-minus75:before {
+	content: "\e049";
+}
+.justicons-moon144:before {
+	content: "\e04a";
+}
+.justicons-musical96:before {
+	content: "\e04b";
+}
+.justicons-new78:before {
+	content: "\e04c";
+}
+.justicons-note32:before {
+	content: "\e04d";
+}
+.justicons-note33:before {
+	content: "\e04e";
+}
+.justicons-parabolic11:before {
+	content: "\e04f";
+}
+.justicons-peace5:before {
+	content: "\e050";
+}
+.justicons-pen57:before {
+	content: "\e051";
+}
+.justicons-photo171:before {
+	content: "\e052";
+}
+.justicons-piano21:before {
+	content: "\e053";
+}
+.justicons-picture27:before {
+	content: "\e054";
+}
+.justicons-pill7:before {
+	content: "\e055";
+}
+.justicons-pin39:before {
+	content: "\e056";
+}
+.justicons-pine8:before {
+	content: "\e057";
+}
+.justicons-portfolio21:before {
+	content: "\e058";
+}
+.justicons-power96:before {
+	content: "\e059";
+}
+.justicons-precious1:before {
+	content: "\e05a";
+}
+.justicons-print31:before {
+	content: "\e05b";
+}
+.justicons-prohibition17:before {
+	content: "\e05c";
+}
+.justicons-rain27:before {
+	content: "\e05d";
+}
+.justicons-rainy11:before {
+	content: "\e05e";
+}
+.justicons-rainy12:before {
+	content: "\e05f";
+}
+.justicons-right132:before {
+	content: "\e060";
+}
+.justicons-right133:before {
+	content: "\e061";
+}
+.justicons-right134:before {
+	content: "\e062";
+}
+.justicons-rocket64:before {
+	content: "\e063";
+}
+.justicons-saturn12:before {
+	content: "\e064";
+}
+.justicons-shield82:before {
+	content: "\e065";
+}
+.justicons-shopping189:before {
+	content: "\e066";
+}
+.justicons-skull26:before {
+	content: "\e067";
+}
+.justicons-spam7:before {
+	content: "\e068";
+}
+.justicons-speaker73:before {
+	content: "\e069";
+}
+.justicons-speech92:before {
+	content: "\e06a";
+}
+.justicons-sports36:before {
+	content: "\e06b";
+}
+.justicons-sun79:before {
+	content: "\e06c";
+}
+.justicons-sunrise2:before {
+	content: "\e06d";
+}
+.justicons-sunset2:before {
+	content: "\e06e";
+}
+.justicons-switches:before {
+	content: "\e06f";
+}
+.justicons-tag44:before {
+	content: "\e070";
+}
+.justicons-telephone95:before {
+	content: "\e071";
+}
+.justicons-temperature11:before {
+	content: "\e072";
+}
+.justicons-thermometer40:before {
+	content: "\e073";
+}
+.justicons-thermometer41:before {
+	content: "\e074";
+}
+.justicons-three140:before {
+	content: "\e075";
+}
+.justicons-tool15:before {
+	content: "\e076";
+}
+.justicons-tray15:before {
+	content: "\e077";
+}
+.justicons-two298:before {
+	content: "\e078";
+}
+.justicons-umbrella40:before {
+	content: "\e079";
+}
+.justicons-university13:before {
+	content: "\e07a";
+}
+.justicons-upload81:before {
+	content: "\e07b";
+}
+.justicons-upload82:before {
+	content: "\e07c";
+}
+.justicons-upload83:before {
+	content: "\e07d";
+}
+.justicons-upper4:before {
+	content: "\e07e";
+}
+.justicons-user140:before {
+	content: "\e07f";
+}
+.justicons-video158:before {
+	content: "\e080";
+}
+.justicons-visible6:before {
+	content: "\e081";
+}
+.justicons-voice19:before {
+	content: "\e082";
+}
+.justicons-wheel24:before {
+	content: "\e083";
+}
+.justicons-wheel25:before {
+	content: "\e084";
+}
+.justicons-white83:before {
+	content: "\e085";
+}
+.justicons-wifi74:before {
+	content: "\e086";
+}
+.justicons-wind23:before {
+	content: "\e087";
+}
+.justicons-winds2:before {
+	content: "\e088";
+}
+.justicons-winter23:before {
+	content: "\e089";
+}
+.justicons-wrench64:before {
+	content: "\e08a";
+}
+.justicons-zig5:before {
+	content: "\e08b";
+}

@@ -1,0 +1,145 @@
+[01-Feb-2018 14:05:09 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/storage/framework/views/07514a082090a9e0f0ccafcbdb82e4f1 on line 73
+[15-Feb-2018 04:58:02 UTC] PHP Parse error:  syntax error, unexpected '@' in /home/triagroup/app/Http/routes.php on line 24
+[15-Feb-2018 05:17:59 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /home/triagroup/storage/framework/views/ecfcae7501cfd42b2fb5b145b5174eb0 on line 131
+[15-Feb-2018 05:32:02 UTC] PHP Parse error:  syntax error, unexpected 'required' (T_STRING), expecting ']' in /home/triagroup/storage/framework/views/ecfcae7501cfd42b2fb5b145b5174eb0 on line 43
+[20-Feb-2018 18:23:01 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/triagroup/app/Http/routes.php on line 36
+[20-Feb-2018 18:23:04 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/triagroup/app/Http/routes.php on line 36
+[20-Feb-2018 18:40:12 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/triagroup/app/Http/routes.php on line 36
+[20-Feb-2018 20:08:11 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/triagroup/app/Http/Controllers/LoginController.php on line 285
+[20-Feb-2018 20:11:36 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/LoginController.php on line 288
+[20-Feb-2018 22:11:49 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/LoginController.php on line 161
+[21-Feb-2018 03:01:19 UTC] PHP Fatal error:  Call to a member function contarUsuariosConjunto() on integer in /home/triagroup/storage/framework/views/20ddd03a3a9e831542eba383e1c8d9a4 on line 155
+[21-Feb-2018 03:48:39 UTC] PHP Parse error:  syntax error, unexpected 'administrador' (T_STRING) in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 159
+[21-Feb-2018 03:50:38 UTC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 229
+[21-Feb-2018 03:54:00 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/triagroup/storage/framework/views/0934afa27815c2478bb95b8eb6ea7d5b on line 108
+[22-Feb-2018 00:03:01 UTC] PHP Parse error:  syntax error, unexpected 'isset' (T_ISSET) in /home/triagroup/storage/framework/views/20ddd03a3a9e831542eba383e1c8d9a4 on line 7
+[22-Feb-2018 00:53:09 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\user() in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 143
+[22-Feb-2018 01:40:37 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/triagroup/storage/framework/views/20ddd03a3a9e831542eba383e1c8d9a4 on line 7
+[22-Feb-2018 05:05:36 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\Request::name() in /home/triagroup/app/Http/Controllers/LoginController.php on line 351
+[24-Feb-2018 22:59:28 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 211
+[24-Feb-2018 23:02:28 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 211
+[25-Feb-2018 02:29:30 UTC] PHP Fatal error:  Cannot use Alexo\LaravelPayU\LaravelPayU as LaravelPayU because the name is already in use in /home/triagroup/app/Http/Controllers/PaymentsController.php on line 9
+[25-Feb-2018 02:31:40 UTC] PHP Fatal error:  Cannot use Alexo\LaravelPayU\LaravelPayU as LaravelPayU because the name is already in use in /home/triagroup/app/Http/Controllers/PaymentsController.php on line 9
+[25-Feb-2018 02:32:23 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Order' not found in /home/triagroup/app/Http/Controllers/PaymentsController.php on line 101
+[25-Feb-2018 11:38:02 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 312
+[25-Feb-2018 11:38:56 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 312
+[25-Feb-2018 17:38:43 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Conjuntos' not found in /home/triagroup/app/Http/Controllers/LoginController.php on line 140
+[25-Feb-2018 17:47:41 UTC] PHP Fatal error:  Call to a member function usuarios() on null in /home/triagroup/storage/framework/views/884b2a911a8541dfbb1cb7de51d8d68e on line 127
+[27-Feb-2018 04:22:22 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/storage/framework/views/909be9f8de6f5ff3499d827c9c8e9cc8 on line 87
+[27-Feb-2018 05:04:25 UTC] PHP Fatal error:  Call to a member function count() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 44
+[27-Feb-2018 05:04:36 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 45
+[27-Feb-2018 05:04:58 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 45
+[27-Feb-2018 05:05:32 UTC] PHP Fatal error:  Call to a member function first() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 43
+[27-Feb-2018 05:07:56 UTC] PHP Fatal error:  Call to a member function get() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 43
+[27-Feb-2018 05:08:05 UTC] PHP Fatal error:  Call to a member function first() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 43
+[27-Feb-2018 05:10:01 UTC] PHP Fatal error:  Call to a member function count() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 44
+[27-Feb-2018 05:10:13 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 49
+[27-Feb-2018 05:11:41 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 51
+[27-Feb-2018 05:11:54 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 50
+[27-Feb-2018 05:12:54 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 46
+[27-Feb-2018 05:13:11 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 50
+[27-Feb-2018 05:33:25 UTC] PHP Parse error:  syntax error, unexpected '');' (T_CONSTANT_ENCAPSED_STRING) in /home/triagroup/app/Http/Controllers/LoginController.php on line 401
+[28-Feb-2018 02:32:19 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/storage/framework/views/909be9f8de6f5ff3499d827c9c8e9cc8 on line 87
+[28-Feb-2018 06:24:44 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 329
+[28-Feb-2018 21:44:56 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 329
+[28-Feb-2018 21:53:08 UTC] PHP Parse error:  syntax error, unexpected '[', expecting ';' or '{' in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 359
+[28-Feb-2018 21:57:54 UTC] PHP Parse error:  syntax error, unexpected '[', expecting ';' or '{' in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 359
+[28-Feb-2018 23:57:51 UTC] PHP Fatal error:  Call to a member function move() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 236
+[28-Feb-2018 23:12:32 America/New_York] PHP Parse error:  syntax error, unexpected '@', expecting ']' in /home/triagroup/config/mail.php on line 57
+[01-Mar-2018 04:30:11 UTC] PHP Parse error:  syntax error, unexpected ''doc'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/triagroup/app/Http/Controllers/LoginController.php on line 353
+[01-Mar-2018 04:30:18 UTC] PHP Parse error:  syntax error, unexpected ''doc'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/triagroup/app/Http/Controllers/LoginController.php on line 353
+[01-Mar-2018 18:36:30 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/triagroup/storage/framework/views/a1ae0131589820beeac03247c8eee03b on line 45
+[02-Mar-2018 00:26:32 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 387
+[02-Mar-2018 00:29:13 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 350
+[02-Mar-2018 16:51:28 UTC] PHP Parse error:  syntax error, unexpected '"total_conjuntos"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 362
+[02-Mar-2018 16:52:43 UTC] PHP Parse error:  syntax error, unexpected '"total_conjuntos"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 362
+[02-Mar-2018 22:16:57 UTC] PHP Fatal error:  Call to a member function count() on array in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 365
+[03-Mar-2018 17:34:08 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 180
+[03-Mar-2018 17:34:08 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 180
+[03-Mar-2018 17:47:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/triagroup/storage/framework/views/884b2a911a8541dfbb1cb7de51d8d68e on line 382
+[03-Mar-2018 17:59:16 UTC] PHP Parse error:  syntax error, unexpected ''doc'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/triagroup/app/Http/Controllers/LoginController.php on line 371
+[05-Mar-2018 21:07:10 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/storage/framework/views/909be9f8de6f5ff3499d827c9c8e9cc8 on line 87
+[05-Mar-2018 22:55:59 UTC] PHP Fatal error:  Call to a member function first() on null in /home/triagroup/storage/framework/views/909be9f8de6f5ff3499d827c9c8e9cc8 on line 87
+[10-Mar-2018 11:44:30 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:44:33 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:16 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:17 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:17 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:18 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:19 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:20 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:20 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:21 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:22 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:23 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:45:24 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/triagroup/config/filesystems.php on line 48
+[10-Mar-2018 11:49:13 America/New_York] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/triagroup/config/filesystems.php on line 58
+[12-Mar-2018 00:55:03 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/PagosController.php on line 138
+[12-Mar-2018 00:56:00 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/PagosController.php on line 138
+[12-Mar-2018 00:56:33 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/PagosController.php on line 138
+[12-Mar-2018 00:57:04 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/PagosController.php on line 138
+[12-Mar-2018 00:57:14 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/PagosController.php on line 138
+[12-Mar-2018 15:25:00 UTC] PHP Fatal error:  Class 'App\Pagospublicidad' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 147
+[12-Mar-2018 15:25:40 UTC] PHP Fatal error:  Class 'App\Pagospublicidad' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 147
+[12-Mar-2018 15:26:17 UTC] PHP Fatal error:  Class 'App\Pagospublicidad' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 147
+[12-Mar-2018 15:27:45 UTC] PHP Fatal error:  Class 'App\Pagospublicidad' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 147
+[12-Mar-2018 15:28:18 UTC] PHP Fatal error:  Class 'App\Pagospublicidad' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 147
+[12-Mar-2018 15:31:14 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Storage' not found in /home/triagroup/app/Http/Controllers/PublicidadController.php on line 140
+[12-Mar-2018 15:31:52 UTC] PHP Fatal error:  Call to a member function getClientOriginalName() on string in /home/triagroup/app/Publicidad.php on line 47
+[12-Mar-2018 18:55:54 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 19:14:44 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 20:21:33 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 20:29:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 20:35:23 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:52:46 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:52:46 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:57:23 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:57:23 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:57:50 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:57:50 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:58:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 21:58:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 22:18:37 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 244
+[12-Mar-2018 23:19:48 UTC] PHP Fatal error:  Cannot use App\Paises as Paises because the name is already in use in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 16
+[12-Mar-2018 23:20:07 UTC] PHP Fatal error:  Cannot use App\Paises as Paises because the name is already in use in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 16
+[12-Mar-2018 23:20:08 UTC] PHP Fatal error:  Cannot use App\Paises as Paises because the name is already in use in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 16
+[12-Mar-2018 23:20:09 UTC] PHP Fatal error:  Cannot use App\Paises as Paises because the name is already in use in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 16
+[12-Mar-2018 23:48:15 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[12-Mar-2018 23:48:41 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[12-Mar-2018 23:49:07 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[12-Mar-2018 23:49:12 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[12-Mar-2018 23:49:21 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[12-Mar-2018 23:49:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Valores' not found in /home/triagroup/app/Http/Controllers/ConjuntoController.php on line 279
+[13-Mar-2018 00:52:50 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[13-Mar-2018 00:52:55 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[13-Mar-2018 00:52:58 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[13-Mar-2018 00:53:01 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[15-Mar-2018 00:28:21 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/app/Http/Controllers/UsuarioController.php on line 100
+[15-Mar-2018 01:19:07 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/triagroup/storage/framework/views/54e4189e48af9561bb003c05b9cebcb7 on line 189
+[16-Mar-2018 17:10:31 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[16-Mar-2018 17:55:21 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Auth' not found in /home/triagroup/app/Http/Controllers/PagosMembresiasController.php on line 250
+[16-Mar-2018 18:10:46 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Auth' not found in /home/triagroup/app/Http/Controllers/PagosAnunciosController.php on line 225
+[16-Mar-2018 22:09:33 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 352
+[16-Mar-2018 22:09:33 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 352
+[16-Mar-2018 22:09:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 352
+[16-Mar-2018 22:09:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 352
+[16-Mar-2018 22:10:20 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 348
+[16-Mar-2018 22:10:20 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 348
+[16-Mar-2018 22:12:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/triagroup/app/Http/Controllers/MensajeController.php on line 77
+[16-Mar-2018 22:12:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/triagroup/app/Http/Controllers/MensajeController.php on line 77
+[17-Mar-2018 05:52:52 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Carbon' not found in /home/triagroup/app/Http/Controllers/PagosPublicidadController.php on line 242
+[17-Mar-2018 06:03:59 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/triagroup/storage/framework/views/d32dd44840df122ff8094b42a104c006 on line 108
+[17-Mar-2018 06:05:24 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/triagroup/storage/framework/views/d32dd44840df122ff8094b42a104c006 on line 99
+[17-Mar-2018 06:05:26 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/triagroup/storage/framework/views/d32dd44840df122ff8094b42a104c006 on line 99
+[17-Mar-2018 06:05:56 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ']' in /home/triagroup/storage/framework/views/d32dd44840df122ff8094b42a104c006 on line 99
+[17-Mar-2018 06:05:58 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ']' in /home/triagroup/storage/framework/views/d32dd44840df122ff8094b42a104c006 on line 99
+[17-Mar-2018 14:10:26 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/triagroup/storage/framework/views/43c67780f0855d4d9c65d335d1fd737e on line 102
+[17-Mar-2018 14:10:28 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/triagroup/storage/framework/views/43c67780f0855d4d9c65d335d1fd737e on line 102
+[17-Mar-2018 16:50:19 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ']' in /home/triagroup/storage/framework/views/032622cd19ada75c2109605babb84885 on line 105
+[17-Mar-2018 19:48:09 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\where() in /home/triagroup/app/Http/Controllers/MensajeController.php on line 321
+[17-Mar-2018 19:50:07 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\where() in /home/triagroup/app/Http/Controllers/MensajeController.php on line 321
+[17-Mar-2018 19:50:09 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\where() in /home/triagroup/app/Http/Controllers/MensajeController.php on line 321
+[17-Mar-2018 19:59:25 UTC] PHP Parse error:  syntax error, unexpected ''mensaje.f' (T_ENCAPSED_AND_WHITESPACE) in /home/triagroup/app/Http/Controllers/MensajeController.php on line 74
+[17-Mar-2018 20:01:48 UTC] PHP Parse error:  syntax error, unexpected ''mensaje.f' (T_ENCAPSED_AND_WHITESPACE) in /home/triagroup/app/Http/Controllers/MensajeController.php on line 74
+[17-Mar-2018 21:00:03 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/triagroup/app/Http/Controllers/MensajeController.php on line 64
+[17-Mar-2018 22:52:20 UTC] PHP Parse error:  syntax error, unexpected ''mensaje' (T_ENCAPSED_AND_WHITESPACE) in /home/triagroup/app/Http/Controllers/MensajeController.php on line 75

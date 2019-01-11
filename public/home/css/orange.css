@@ -1,0 +1,367 @@
+/************************************************
+Theme Name: Arvin - One Page Template
+Description: Orange Color Scheme
+Author: Akronyms
+Author URI: http://www.akronyms.net
+Version: 1.0
+************************************************ */
+
+/* Highlited Header Text*/
+span.arvin-highlight-text{
+	color: #2E3191;
+}
+
+/* solid Btn*/
+.arvin-button-solid{
+	background-color: #fb724e;
+}
+
+.arvin-button-solid:hover{
+	background-color: #dd684a;
+}
+
+/* outline btn*/
+.arvin-button-outline-light:hover{
+	background-color: #fb724e
+}
+
+/*Dark btn*/
+.arvin-button-outline-dark:hover{
+	background-color: #fb724e;
+}
+
+.arvin-button-outline-round-dark:hover{
+	background-color: #fb724e;
+}
+
+/* round btn*/
+.arvin-btn-round{
+	background-color: #0897F6;
+	color:#ffffff
+}
+
+.arvin-btn-round:hover{
+	background-color: #2E3191;
+}
+
+.arvin-button-outline-round:hover{
+	background-color: #fb724e;
+}
+
+/* Single Icon with text */
+.arvin-blurb-icon-only i{
+	color: #fb724e;
+}
+
+.arvin-blurb-icon-only h3{
+	color: #fb724e
+}
+
+/* Round Icon with text */
+.arvin-blurb-round-icon:hover .arvin-icon{
+	background-color: #2E3191;
+}
+
+.arvin-blurb-round-icon:hover h3{
+	color: #2E3191;
+}
+/* icon Square */
+.arvin-blurb-icon-left-square:hover .arvin-blurb-text h3{
+	color: #0897F6;
+}
+
+.arvin-blurb-icon-left-square:hover .arvin-blurb-text h3:after{
+	background-color: #2E3191;
+}
+
+.arvin-main-menu .navbar-nav li a:hover,
+.arvin-main-menu .navbar-nav li.active > a{
+    color: #2E3191;
+}
+
+.arvin-slider .sp-selected-button {
+  background-color: #2E3191;
+}
+
+.arvin-member-details h3{
+	color: #fb724e;
+}
+
+/*Featured Work*/
+.arvin-port-work-details .arvin-port-work-desc p a:hover{
+	color: #fb724e;
+}
+
+.arvin-port-work-details .arvin-port-work-desc h3{
+	color: #fb724e;
+}
+
+.arvin-port-work-details .arvin-port-work-desc .arvin-like-btn a:hover{
+	color: #fb724e;
+}
+
+.arvin-port-work-details .arvin-port-work-desc .arvin-like-btn a:hover i{
+	color: #fb724e;
+}
+
+/*Portfolio*/
+.arvin-portfolio-filter-btn-group ul li a.selected{
+	background-color: #fb724e;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details h3{
+	color: #fb724e;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details p a:hover{
+	color: #fb724e;
+}
+
+.arvin-portfolio-btn-wrapper a.arvin-portfolio-btn:hover{
+	color: #ffffff;
+	background-color: #fb724e;
+	border: 2px solid transparent;
+}
+
+/*Custom Section*/
+.arvin-custom-sec-text ul li i{
+	color: #fb724e;
+}
+
+/*Process*/
+.arvin-process-item:hover h3{
+	color: #fb724e;
+}
+
+/*Blog*/
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header h2 a:hover{
+	color: #fb724e
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header-wrapper p a:hover{
+	color: #fb724e;
+}
+
+.arvin-image-post .arvin-blog-post-header-wrapper .arvin-blog-post-comments a:hover,
+.arvin-gallery-post .arvin-blog-post-header-wrapper .arvin-blog-post-comments a:hover{
+	color: #fb724e;
+}
+
+.arvin-image-post .arvin-blog-post-header-wrapper .arvin-blog-post-comments a:hover i,
+.arvin-gallery-post .arvin-blog-post-header-wrapper .arvin-blog-post-comments a:hover i{
+	color: #fb724e;
+}
+
+.arvin-standard-post .arvin-blog-img{
+	background-color: #fb724e;
+}
+
+.arvin-standard-post .arvin-blog-img span.blog-publish-date{
+	background-color: #fb724e;
+}
+
+.arvin-blockquote-post .arvin-blog-img{
+	background-color: #fb724e;
+}
+
+
+.arvin-link-post .arvin-link-wrapper a:hover{
+	background-color: #fb724e;
+}
+
+/* Pagination */
+.arvin-blog-pagination-wrapper ul li a:hover,
+.arvin-blog-pagination-wrapper ul li.current a{
+	color: #fb724e;
+	border: 2px solid #fb724e;
+}
+
+
+.arvin-more-post-wrapper a.arvin-more-blog-post:hover{
+	color: #ffffff;
+	border: 2px solid transparent;
+	background-color: #fb724e;
+}
+
+/*Pricing Plan Details*/
+.arvin-pricing-plans .arvin-pricing-titles h2{
+	color: #fb724e
+}
+
+.arvin-pricing-plans .arvin-pricing-titles p span{
+	color: #fb724e;
+}
+
+/*Signup Btn*/
+.arvin-pricing-plans a.arvin-signup-btn{
+	background-color: #fb724e;
+}
+
+.arvin-pricing-plans a.arvin-signup-btn:hover{
+	background-color: #dd684a;
+}
+
+/*Read More btn*/
+.arvin-blog-post-content a{
+	color: #fb724e;
+}
+
+.arvin-contact-section .arvin-contact-form input[type='submit']{
+	background-color: #ffffff;
+	color: #2E3191;
+}
+
+.arvin-contact-section .arvin-contact-form input[type='submit']:hover{
+	background-color: #0897F6;
+}
+
+.arvin-find-us-btn h3{
+	color: #fb724e;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li a:hover i{
+	color: #fb724e;
+}
+
+/*Portfolio Details Category*/
+.arvin-portfolio-information .arvin-single-portfolio-meta ul li a:hover{
+	color: #fb724e;
+}
+
+/*Likes Btn*/
+.arvin-portfolio-information .arvin-share-project .arvin-project-likes p a:hover{
+	color: #fb724e;
+}
+
+/********************************************************
+*														*
+*          			Masonry Blog Page					*
+*														*
+*********************************************************/
+.arvin-blog-post-header-wrapper h2 a:hover,
+.arvin-blog-post-header h2 a:hover{
+	color: #fb724e;
+}
+
+.arvin-blog-post-header-wrapper h2 a:hover i,
+.arvin-blog-post-header h2 a:hover i{
+	color: #fb724e;
+}
+
+.arvin-blog-post-header-wrapper p a:hover{
+	color: #fb724e;
+}
+
+/* Blog Post Heading */
+.arvin-blog-post-header-wrapper h2 a:hover i.arvin-blog-category-icon{
+	color: #fb724e;
+}
+
+/********************************************************
+*														*
+*          			Blog Single Page					*
+*														*
+*********************************************************/
+.arvin-single-post-details p.arvin-blog-post-meta a:hover{
+	color: #fb724e
+}
+
+/* * Blockquote * */
+.arvin-single-post-wrapper .arvin-single-post-top-wrapper .arvin-blockquote-wrapper{
+	background-color: #fb724e;
+}
+
+.arvin-single-post-details .arvin-single-post-text blockquote span.arvin-bquote-person{
+	color: #fb724e;
+}
+
+/* * Link Post * */
+.arvin-link-wrapper a:hover{
+	background-color: #fb724e;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share p.arviv-single-post-tags a:hover{
+	color: #fb724e;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li a:hover i{
+	color: #fb724e;
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a:hover{
+	color: #fb724e
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a:hover i{
+	color: #fb724e
+}
+
+.arvin-single-post-wrapper .arvin-post-links .arvin-prev-post-link a:hover,
+.arvin-single-post-wrapper .arvin-post-links .arvin-prev-post-link:hover i,
+.arvin-single-post-wrapper .arvin-post-links .arvin-next-post-link a:hover,
+.arvin-single-post-wrapper .arvin-post-links .arvin-next-post-link:hover i{
+	color: #fb724e;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta h3.comment-user-name{
+	color: #fb724e;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn:hover{
+	color: #fb724e
+}
+
+/*Comment text*/
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn:hover i{
+	color: #fb724e
+}
+
+.arvin-post-comment-form .arvin-comment-form input[type='submit']{
+	background-color: #fb724e;
+}
+
+
+.arvin-post-comment-form .arvin-comment-form input[type='submit']:hover{
+	background-color: #dd684a;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget h3.arvin-widget-title:after{
+	background-color: #fb724e;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-category-widget li a:hover{
+	color: #fb724e;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts h3 a{
+	color: #fb724e;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count:hover{
+	color: #fb724e
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count:hover i{
+	color: #fb724e
+}
+
+.arvin-tags-widget .arvin-tag-cloud a:hover{
+	color: #fb724e;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  border: 1px solid #fb724e;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+  background-color: #fb724e;
+}
+
+footer ul li a:hover i{
+	color:#2E3191;
+}
+
+/* * * * * 404 * * * * */
+.arvin-fourzerofour-page-section .arvin-fourzerofour-content a:hover{
+	background-color: #fb724e;
+}

@@ -1,0 +1,18 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+.border-radius{
+    border-radius: 100px;
+}
+
+a.back-href {
+    float: left;
+    font-size: 34px;
+    font-weight: 100;
+    color: black;
+    margin-right: 35px;
+    position: relative;
+    top: 6px;
+}

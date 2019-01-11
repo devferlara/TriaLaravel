@@ -1,0 +1,48 @@
+Array
+(
+    [url] => http://localhost/triagroup/public/pagos/listenerpayu
+    [test] => 1
+    [merchant_id] => 508029
+    [state_pol] => 4
+    [description] => Este es el mensaje
+    [reference_sale] => 20180307211239
+    [transaction_id] => f5e668f1-7ecc-4b83-a4d1-0aaa68220262
+    [payment_method_name] => MASTERCARD
+    [value] => 250.00
+    [response_message_pol] => APPROVED
+    [currency] => USD
+    [email_buyer] => pruebas@hotmail.com
+)
+
+Array
+(
+    [url] => http://localhost/triagroup/public/pagos/listenerpayu
+    [test] => 1
+    [merchant_id] => 508029
+    [state_pol] => 4
+    [description] => Este es el mensaje
+    [reference_sale] => 20180307211239
+    [transaction_id] => f5e668f1-7ecc-4b83-a4d1-0aaa68220262
+    [payment_method_name] => MASTERCARD
+    [value] => 250.00
+    [response_message_pol] => APPROVED
+    [currency] => USD
+    [email_buyer] => pruebas@hotmail.com
+)
+
+Array
+(
+    [url] => http://localhost/triagroup/public/pagos/listenerpayu
+    [test] => 1
+    [merchant_id] => 508029
+    [state_pol] => 4
+    [description] => Este es el mensaje
+    [reference_sale] => 20180307211239
+    [transaction_id] => f5e668f1-7ecc-4b83-a4d1-0aaa68220262
+    [payment_method_name] => MASTERCARD
+    [value] => 250.00
+    [response_message_pol] => APPROVED
+    [currency] => USD
+    [email_buyer] => pruebas@hotmail.com
+)
+

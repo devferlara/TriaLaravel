@@ -1,0 +1,589 @@
+/* Tablet Layout: 1024px.  */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/***********************************************
+					Home Page
+/***********************************************/
+
+  /*************** Menu ****************/
+  .arvin-main-menu.minified {
+    background-color: #28292e;
+    padding: 20px 0 0;
+    position: fixed;
+  }
+
+  .navbar-header {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    float: none;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+  }
+
+  .navbar-collapse {
+  	text-align: center;
+  }
+
+  .arvin-main-menu .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 5px;
+  }
+
+  /*************** Portfolio ****************/
+  .arvin-portfolio-items .arvin-portfolio-item {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    width: 33.33331%;
+  }
+
+  /*************** Team ****************/
+  .arvin-team-slides .arvin-member-img-wrapper{
+    width: 35%;
+    margin-right: 5%;
+  }
+
+  .arvin-member-details {
+    display: inline-block;
+    float: left;
+    width: 60%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/***********************************************
+					Home Page
+/***********************************************/
+
+  /*************** Menu ****************/
+  .arvin-main-menu.minified {
+    background-color: #28292e;
+    padding: 20px 0 0;
+    position: fixed;
+  }
+
+  .navbar-header {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    float: none;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+  }
+
+  .navbar-collapse {
+  	text-align: center;
+  }
+
+  .arvin-main-menu .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 5px;
+  }
+
+  /*************** Blurb Styling ****************/
+  /*--- Icon square left ---*/
+  .arvin-blurb-icon-left-square .arvin-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  .arvin-blurb-icon-left-square .arvin-blurb-text {
+    float: left;
+    width: 140px;
+  }
+
+  .arvin-blurb-icon-left-square .arvin-icon i {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  /*************** Team ****************/
+  .arvin-team-slides .arvin-member-img-wrapper{
+    width: 35%;
+    margin-right: 5%;
+  }
+
+  .arvin-member-details {
+    display: inline-block;
+    float: left;
+    width: 60%;
+  }
+
+  /*************** Team ****************/
+  .arvin-skills-wrapper{
+  	padding-bottom: 30px;
+  }
+
+  .arvin-skill-item{
+  	margin-bottom: 50px;
+  }
+
+
+  /*************** Portfolio ****************/
+  .arvin-portfolio-items .arvin-portfolio-item {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    width: 33.33331%;
+  }
+
+  /***********************************************
+          Masonry Blog Page
+  /***********************************************/
+  .arvin-masonry-blog-content-wrapper .arvin-blog-items {
+    width: 50%;
+  }
+
+  .arvin-blog-pagination-wrapper ul li {
+    margin-bottom: 10px;
+  }
+
+
+
+  /***********************************************
+  					Blog Single Page
+  /***********************************************/
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-author-img {
+    height: 70px;
+    overflow: hidden;
+    width: 25%;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta {
+    position: relative;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta h3.comment-user-name {
+    width: 75%;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta p.commnet-post-date {
+    text-align: left;
+    width: 75%;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn {
+    width: 25%;
+    position: absolute;
+    top: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+/***********************************************
+					Home Page
+/***********************************************/
+  /*************** Section Header ****************/
+  .arvin-section-header {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  /*************** Menu ****************/
+  .navbar-toggle {
+    border: 1px solid #fff;
+  }
+
+  .navbar-toggle .icon-bar {
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+    background-color: #fff;
+  }
+
+  .navbar-collapse {
+    border-top: 0px solid transparent;
+    box-shadow: 0 0px 0 rgba(255, 255, 255, 0) inset;
+    max-height: auto;
+  }
+
+  .arvin-main-menu .navbar-nav {
+    float: none;
+    background-color: #28292e;
+    padding: 10px 0;
+  }
+
+  .arvin-main-menu .navbar-nav li {
+    margin-bottom: 10px;
+  }
+
+  .arvin-main-menu .navbar-nav li:last-child{
+  	margin-bottom: 0;
+  }
+
+  /*  Sub Menu  */
+.arvin-main-menu .navbar-nav li ul.sub-menu{
+  display: block;
+  float:none;
+  padding-left: 30px;
+  position:static;
+  opacity:1;
+  visibility:visible; /* Avoids being selected even if the opacity is set to 0 */
+}
+
+.arvin-main-menu .navbar-nav li ul.sub-menu li {
+  display: block;
+  clear:both;
+  margin-top:0;
+  padding:0px 0px;
+}
+
+.arvin-main-menu .navbar-nav li ul.sub-menu li a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  white-space: pre-wrap;
+  clear: both;
+}
+
+.arvin-main-menu .navbar-nav li:hover ul.sub-menu {
+  opacity:1;
+  visibility:visible;
+}
+
+.arvin-main-menu .navbar-nav li:hover ul.sub-menu li {
+  margin-top:0;
+  opacity:1;
+}
+
+/* SUB-MENU SUB STYLE */
+.arvin-main-menu .navbar-nav li ul.sub-menu li ul.sub-menu,
+.arvin-main-menu .navbar-nav li ul.sub-menu li ul.sub-menu li ul.sub-menu {
+  display: block;
+  float:none;
+  position: relative;
+  padding-left: 30px;
+  background:#28292e;
+  min-width: 100px;
+  opacity:1;
+  left: auto;
+  visibility:visible;
+}
+
+.arvin-main-menu .navbar-nav li ul.sub-menu li ul.sub-menu li{
+  padding: 0px 0;
+}
+
+.arvin-main-menu .navbar-nav li ul.sub-menu li:hover ul.sub-menu,
+.arvin-main-menu .navbar-nav li ul.sub-menu li ul.sub-menu li:hover ul.sub-menu {
+  left: auto;
+}
+
+
+  /*************** Blurb Styling ****************/
+  /*--- Icon Round Top ---*/
+  .arvin-blurb-icon-only {
+    margin-bottom: 50px;
+  }
+
+  .arvin-blurb-icon-only:last-child{
+  	margin-bottom: 0;
+  }
+
+  /*--- Icon square left ---*/
+  .arvin-blurb-icon-left-square .arvin-blurb-text {
+    float: left;
+    width: 61%;
+  }
+
+  /* Round Icon with text */
+  .arvin-blurb-round-icon {
+    margin-bottom: 50px;
+  }
+
+  .arvin-blurb-round-icon:last-child{
+    margin-bottom: 0;
+  }
+
+
+  /*--- Image With Text ---*/
+  .arvin-process-item {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .arvin-process-item:last-child{
+  	margin-bottom: 0;
+  }
+
+
+  /*************** Cta ****************/
+  /*--- CTA 1 ---*/
+  .arvin-cta-1 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .arvin-cta-1 p{
+  	text-align: center;
+  	margin-bottom: 20px;
+  }
+
+  .arvin-cta-1 .arvin-cta-btn{
+  	text-align: center;
+  }
+
+  .arvin-cta-1 .arvin-cta-btn a{
+  	float: none;
+  }
+
+  /*************** Homepage Slider ****************/
+.arvin-main-slides h1.arvin-slider-text-big {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  text-transform: uppercase;
+  white-space: normal !important;
+  text-align: center;
+  width: 100% !important;
+}
+
+.arvin-main-slides p {
+  color: #ffffff;
+  font-family: "Raleway",sans-serif;
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-bottom: 0;
+  white-space: normal !important;
+  text-align: center;
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+
+  /*************** Team Slider ****************/
+  .arvin-team-slides .arvin-member-img-wrapper {
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .arvin-member-details {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .arvin-member-details ul {
+  	display: inline-block;
+  }
+
+  /*************** Skills ****************/
+  .arvin-skill-item{
+  	margin-bottom: 50px;
+  }
+
+  .arvin-skill-item:last-child{
+  	margin-bottom: 0;
+  }
+
+
+  /*************** Counter ****************/
+  .arvin-counter-item {
+    margin-bottom: 50px;
+  }
+
+  .arvin-counter-item:last-child{
+  	margin-bottom: 0;
+  }
+
+
+  /*************** Portfolio ****************/
+  .arvin-portfolio-items .arvin-portfolio-item {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  /*************** Our Offer ****************/
+  .arvin-service-wrapper > div{
+    margin-bottom: 50px;
+  }
+
+  /*************** Arvin Custom Section ****************/
+  .arvin-section-wrapper .arvin-custom-sec-img{
+    margin-bottom: 20px;
+  }
+
+
+  /*************** Testimonial ****************/
+  .arvin-bg-video-wrapper video {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+  }
+
+  /*************** Contact Form ****************/
+  .arvin-contact-section .arvin-contact-address {
+    margin-bottom: 50px;
+  }
+
+
+
+
+  /***********************************************
+  					Portfolio Single Page
+  /***********************************************/
+  .arvin-portfolio-information {
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  /***********************************************
+          Masonry Blog Page
+  /***********************************************/
+  .arvin-masonry-blog-content-wrapper .arvin-blog-items {
+    width: 100%;
+  }
+
+  .arvin-blog-pagination-wrapper ul li {
+    margin-bottom: 10px;
+  }
+
+  /***********************************************
+  					Blog Single Page
+  /***********************************************/
+  .arvin-single-post-details .arvin-single-post-text blockquote {
+    margin: 0 15px 15px;
+  }
+
+  /****** Comments ******/
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text {
+    padding: 0;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-author-img {
+    height: 70px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta h3.comment-user-name {
+    color: #fb724e;
+    display: block;
+    float: none;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta p.commnet-post-date {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 75%;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn {
+    width: 25%;
+  }
+
+
+  .arvin-post-comments-wrapper .arvin-post-comments.arvin-commnet-reply {
+    margin-left: 20px;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments.arvin-commnet-reply {
+    margin-left: 25px;
+  }
+
+  .arvin-post-comments-wrapper .arvin-post-comments.arvin-commnet-reply-reply {
+    margin-left: 50px;
+  }
+
+
+  /******************** Sidebar **********************/
+  .arvin-sidebar-widget-wrapper {
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/***********************************************
+					Home Page
+/***********************************************/
+  /*Menu*/
+  .navbar-collapse{
+    max-height: 235px;
+  }
+
+  .minified .navbar-collapse{
+    max-height: 250px;
+  }
+
+  /****** Portfolio *********/
+  .arvin-portfolio-items .arvin-portfolio-item {
+    width: 50%;
+  }
+
+}
