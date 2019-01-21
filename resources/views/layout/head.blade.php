@@ -1,62 +1,54 @@
-<!-- START HEADER -->
-<div class="header ">
-    <!-- START MOBILE CONTROLS -->
-    <!-- LEFT SIDE -->
-    <div class="pull-left full-height visible-sm visible-xs">
-        <!-- START ACTION BAR -->
-        <div class="sm-action-bar">
-            <a href="#" class="btn-link toggle-sidebar" data-toggle="sidebar">
-                <span class="icon-set menu-hambuger"></span>
-            </a>
-        </div>
-        <!-- END ACTION BAR -->
-    </div>
-    <!-- RIGHT SIDE -->
-    <div class="pull-right full-height visible-sm visible-xs">
-        <!-- START ACTION BAR -->
-        <div class="sm-action-bar">
-            <a href="#" class="btn-link" data-toggle="quickview" data-toggle-element="#quickview">
-                <span class="icon-set menu-hambuger-plus"></span>
-            </a>
-        </div>
-        <!-- END ACTION BAR -->
-    </div>
-    <!-- END MOBILE CONTROLS -->
-    <div class=" pull-left sm-table">
-        <div class="header-inner">
-            <div class="brand inline">
-            </div>
-        </div>
+<nav class="navbar fixed-top">
+    <div class="d-flex align-items-center navbar-left">
+        <a href="#" class="menu-button d-none d-md-block">
+            <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                <rect x="0.48" y="0.5" width="7" height="1" />
+                <rect x="0.48" y="7.5" width="7" height="1" />
+                <rect x="0.48" y="15.5" width="7" height="1" />
+            </svg>
+            <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                <rect x="1.56" y="0.5" width="16" height="1" />
+                <rect x="1.56" y="7.5" width="16" height="1" />
+                <rect x="1.56" y="15.5" width="16" height="1" />
+            </svg>
+        </a>
+
+        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                <rect x="0.5" y="0.5" width="25" height="1" />
+                <rect x="0.5" y="7.5" width="25" height="1" />
+                <rect x="0.5" y="15.5" width="25" height="1" />
+            </svg>
+        </a>
     </div>
 
-    <div class=" pull-right">
-        <!-- START User Info-->
-        <div class="visible-lg visible-md m-t-10">
-            <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-                <span class="semi-bold">{{ Auth::user()->nombres }}</span> <span class="text-master">{{ Auth::user()->apellidos }}</span>
-            </div>
-            <div class="dropdown pull-right">
-                <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="thumbnail-wrapper d32 circular inline m-t-5">
-                <img src="{{ asset('build/assets/img/profiles/user.png') }}" alt="" data-src="{{ asset('build/assets/img/profiles/user.png') }}" data-src-retina="{{ asset('build/assets/img/profiles/user.png') }}" width="32" height="32">
-            </span>
-                </button>
-                <ul class="dropdown-menu profile-dropdown" role="menu">
 
-                    <li class="bg-master-lighter">
-                        <a href="/perfil" class="clearfix">
-                            <span class="pull-left">Editar Perfil</span>
-                            <span class="pull-right"><i class="fa fa-edit"></i></span>
-                        </a>
-                        <a href="/logout" class="clearfix">
-                            <span class="pull-left">Salir</span>
-                            <span class="pull-right"><i class="pg-power"></i></span>
-                        </a>
-                    </li>
-                </ul>
+    <a class="navbar-logo" href="Dashboard.Default.html">
+        <img class="logo_principal_admin" src="{{ asset('build/assets/img/logo_login.png') }}" >
+    </a>
+
+    <div class="navbar-right">
+        <div class="header-icons d-inline-block align-middle">
+
+            <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                <i class="simple-icon-size-fullscreen"></i>
+                <i class="simple-icon-size-actual"></i>
+            </button>
+
+        </div>
+
+        <div class="user d-inline-block">
+            <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="name">{{ Auth::user()->nombres }} {{ Auth::user()->apellidos }}</span>
+                <span>
+                    <img src="{{ asset('build/assets/img/profiles/user.png') }}" alt="" data-src="{{ asset('build/assets/img/profiles/user.png') }}" data-src-retina="{{ asset('build/assets/img/profiles/user.png') }}" width="32" height="32">
+                </span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right mt-3">
+                <a class="dropdown-item" href="/perfil">Editar Perfil</a>
+                <a class="dropdown-item" href="/logout">Salir</a>
             </div>
         </div>
-        <!-- END User Info-->
     </div>
-</div>
-<!-- END HEADER -->
+</nav>

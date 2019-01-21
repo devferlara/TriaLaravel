@@ -1,75 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>TRIA- Propiedad Horizontal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('meta')
-
-    {!!Html::style('build/assets/plugins/pace/pace-theme-flash.css')!!}
-    {!!Html::style('build/assets/plugins/boostrapv3/css/bootstrap.min.css')!!}
-    {!!Html::style('build/assets/plugins/font-awesome/css/font-awesome.css')!!}
-    {!!Html::style('build/assets/plugins/jquery-scrollbar/jquery.scrollbar.css')!!}
-    {!!Html::style('build/assets/plugins/bootstrap-select2/select2.css')!!}
-    {!!Html::style('build/assets/plugins/switchery/css/switchery.min.css')!!}
-    {!!Html::style('build/pages/css/pages-icons.css')!!}
-    {!!Html::style('build/pages/css/pages.css')!!}
-
-    @yield('css')
-    <!--[if lte IE 9]>
-    <link href="{{ asset('build/pages/css/ie9.css') }}" rel="stylesheet" type="text/css" />
-    <![endif]-->
-
-    <script type="text/javascript">
-        window.onload = function()
-        {
-            // fix for windows 8
-            if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
-                document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="pages/css/windows.chrome.fix.css" />'
-        }
-    </script>
+    {!!Html::style('build/assets/font/iconsmind/style.css')!!}
+    {!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/bootstrap.min.css')!!}
+    {!!Html::style('build/assets/css_new/estilos.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/perfect-scrollbar.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/bootstrap-float-label.min.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/dataTables.bootstrap4.min.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/quill.bubble.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/datatables.responsive.bootstrap4.min.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/quill.snow.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/quill.bubble.css')!!}
+    {!!Html::style('build/assets/css_new/main.css')!!}
 </head>
-<body class="fixed-header">
+<body id="app-container" class="menu-default show-spinner">
 <!-- START PAGE-CONTAINER -->
     @yield('sidebar')
-
-<div class="page-container">
-
     @yield('head')
+<main>
+
+    
 
     @yield('content')
 
     @yield('footer')
-</div>
+</main>
 <!-- END PAGE CONTAINER -->
 <!-- BEGIN VENDOR JS -->
-{!!Html::script('build/assets/plugins/pace/pace.min.js')!!}
-{!!Html::script('build/assets/js/script/jquery-2.1.0.min.js')!!}
-{!!Html::script('build/assets/plugins/modernizr.custom.js')!!}
-{!!Html::script('build/assets/plugins/jquery-ui/jquery-ui.min.js')!!}
-{!!Html::script('build/assets/plugins/boostrapv3/js/bootstrap.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery/jquery-easy.js')!!}
-{!!Html::script('build/assets/plugins/jquery-unveil/jquery.unveil.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-bez/jquery.bez.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-ios-list/jquery.ioslist.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-actual/jquery.actual.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js')!!}
-{!!Html::script('build/assets/plugins/bootstrap-select2/select2.min.js')!!}
-{!!Html::script('build/assets/plugins/classie/classie.js')!!}
-{!!Html::script('build/assets/plugins/switchery/js/switchery.min.js')!!}
-{!!Html::script('build/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-menuclipper/jquery.menuclipper.js')!!}
+{!!Html::script('build/assets/js_new/vendor/jquery-3.3.1.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/bootstrap.bundle.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/perfect-scrollbar.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/datatables.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/mousetrap.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/quill.min.js')!!}
+{!!Html::script('build/assets/js/script/admin.js')!!}
 
-@yield('js_library')
+{!!Html::script('build/assets/js_new/vendor/ckeditor5-build-classic/ckeditor.js')!!}
+{!!Html::script('build/assets/js_new/vendor/select2.full.js')!!}
+{!!Html::script('build/assets/js_new/dore.script.js')!!}
+{!!Html::script('build/assets/js/script/listarciudades.js?v=1')!!}
+{!!Html::script('build/assets/js/script/pagos.js')!!}
+{!!Html::script('build/assets/js_new/scripts.js')!!}
 
-<!-- END VENDOR JS -->
-<!-- BEGIN CORE TEMPLATE JS -->
-{!!Html::script('build/pages/js/pages.min.js')!!}
-<!-- END CORE TEMPLATE JS -->
-<!-- BEGIN PAGE LEVEL JS -->
 
-@yield('specific_js')
-
-{!!Html::script('build/assets/js/scripts.js')!!}
 
 </body>
 </html>

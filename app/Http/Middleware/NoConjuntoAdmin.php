@@ -34,8 +34,10 @@ class NoConjuntoAdmin
 
                 //verificar que tenga un conjunto
 
+                //38
                 $admin = Adminm::with('usuarios')->where('usuario_id', '=', $user->id)->firstOrFail();
 
+                //25
                 $adminConjunto = AdminC::where('administrador_id', '=', $admin->id)->get();
 
                 if(count($adminConjunto) == 0)
@@ -46,6 +48,7 @@ class NoConjuntoAdmin
 
                 //Verificar que halla pagado la membresia
 
+                
                 $pago = PagoConjunto::where(['administrador_id' => $admin->id,'payment_status' => 'APPROVED','status' => 1])->get();
                 
                 if(count($pago) == 0)
@@ -64,7 +67,7 @@ class NoConjuntoAdmin
 
                     //Enviar al pago
 
-                    Session::flash('message','Es necesario pagar su membresia.');
+                    Session::flash('message','Es necesario pagar su membresia.' . $pago[0]);
                     return redirect()->to('administrador/pagos/create');
                 }
 

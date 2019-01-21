@@ -39,13 +39,13 @@ class AnunciosController extends Controller
     {
         $user= Auth::user();
         if ($user->rol == "SuperAdmin") {
-            $anuncios = Anuncios::with('conjuntos')->orderBy('fecha', 'DESC')->paginate(20);
+            $anuncios = Anuncios::with('conjuntos')->orderBy('fecha', 'DESC')->paginate(30000);
             return View('backend.superadmin.anuncios.index', compact('anuncios'));
         } else if ($user->rol == "Administrador") {
             $admin = Administrador::where('usuario_id', '=', $user->id)->firstOrFail();
             $adminConjunto = AdministradorConjunto::where('administrador_id', '=', $admin->id)->firstOrFail();
             $conjunto = Conjunto::where('id',$adminConjunto->conjunto_id)->firstOrFail();
-            $anuncios = Anuncios::with('conjuntos')->where('conjunto_id',$conjunto->id)->paginate(20);
+            $anuncios = Anuncios::with('conjuntos')->where('conjunto_id',$conjunto->id)->paginate(30000);
             return View('backend.administrador.anuncios.index', compact('anuncios'));
         } else if ($user->rol == "ResidenteUsuario") {
             $datos = DB::table('usuario_apartamentos as u_apartamento')

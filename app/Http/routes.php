@@ -12,6 +12,11 @@ Route::get('/', function () {
 Route::get('/politicas', function () {
     return view('home.politicas');
 });
+
+Route::get('/prueba', function () {
+    return view('backend.administrador.prueba');
+});
+
 /* Redirecciona hacia la pagina de contacto*/
 Route::post('/contact','HomeController@contact');
 //* Redirecciona al correo de comunicando

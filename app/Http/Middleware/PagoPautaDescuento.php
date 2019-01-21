@@ -42,7 +42,6 @@ class PagoPautaDescuento
                 if(count($pago) == 0)
                 {
                     //Enviar al pago
-
                     Session::flash('message','Es necesario realizar el pago de la publicidad.');
                     return redirect()->to('pautante/pagospublicidad/crearpago/bonos');
                 }

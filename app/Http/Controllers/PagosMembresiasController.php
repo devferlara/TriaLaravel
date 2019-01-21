@@ -39,7 +39,7 @@ class PagosMembresiasController extends Controller
                 ->whereNull('pagos.deleted_at')
                 ->groupBy('pagos.id')
                 ->orderBy('created_at','DESC')
-                ->paginate(20);
+                ->paginate(30000);
 
            return view('backend.superadmin.pagosmembresias.index',compact("pagos"));
         }
@@ -60,7 +60,7 @@ class PagosMembresiasController extends Controller
                 ->whereNull('pagos.deleted_at')
                 ->groupBy('pagos.id')
                 ->orderBy('created_at','DESC')
-                ->paginate(20);
+                ->paginate(30000);
 
            return view('backend.administrador.pagosmembresias.index',compact("pagos"));
         }
@@ -295,7 +295,7 @@ class PagosMembresiasController extends Controller
                 ->groupBy('pagos.id')
 
                 ->orderBy('created_at','DESC')
-                ->paginate(20);
+                ->paginate(30000);
 
            return view('backend.superadmin.pagosmembresias.index',compact("pagos"));
        }
@@ -326,7 +326,7 @@ class PagosMembresiasController extends Controller
                 ->groupBy('pagos.id')
 
                 ->orderBy('created_at','DESC')
-                ->paginate(20);
+                ->paginate(30000);
 
            return view('backend.administrador.pagosmembresias.index',compact("pagos"));
        }

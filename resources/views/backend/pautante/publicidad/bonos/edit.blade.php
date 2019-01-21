@@ -1,21 +1,11 @@
 @extends('layout.mensajes')
 
-<!-- Create General Section Sidebar -->
 @section('sidebar')
-<!-- Include the menu -->
 @include('backend.menu.pautante')
 @stop
 
-<!-- Create General Section Header -->
 @section('head')
-<!-- Include the profile header -->
 @include('layout.head')
-
-@stop
-
-@section('css')
-{!!Html::style('build/assets/plugins/multiple-select/multiple-select.css')!!}
-
 @stop
 
 @section('content')

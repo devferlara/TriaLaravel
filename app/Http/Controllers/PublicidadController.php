@@ -42,7 +42,7 @@ class PublicidadController extends Controller
     {   
         $user= Auth::user();
         if ($user->rol == "SuperAdmin") {
-            $publicidades = Publicidad::orderBy('fecha', 'DESC')->paginate(20);
+            $publicidades = Publicidad::orderBy('fecha', 'DESC')->paginate(300000);
         return view ('backend.superadmin.publicidad.bonos.index', compact ('publicidades'));
         } else if ($user->rol == "Administrador") {
 
@@ -59,7 +59,7 @@ class PublicidadController extends Controller
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => $conjunto->ciudad,'sc.pais' => $conjunto->pais])
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => NULL,'sc.pais' => $conjunto->pais])
             ->groupBy('sc.publicidad_id')
-            ->paginate(20);
+            ->paginate(30000);
             
             return View('backend.administrador.publicidad.bonos.index', compact('publicidades'));
 
@@ -88,7 +88,7 @@ class PublicidadController extends Controller
             return View('backend.usuario.publicidad.index', compact('publicidades'));
         }else if($user->rol == 'Pautante')
         {
-            $publicidades= Publicidad::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(20);
+            $publicidades= Publicidad::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(30000);
             return View('backend.pautante.publicidad.bonos.index', compact('publicidades'));
         }
 

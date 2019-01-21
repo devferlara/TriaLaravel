@@ -41,7 +41,7 @@ class PublivehiculosController extends Controller
     {   
         $user= Auth::user();
         if ($user->rol == "SuperAdmin") {
-            $publicaciones = PublicacionVehiculos::orderBy('fecha', 'DESC')->paginate(20);
+            $publicaciones = PublicacionVehiculos::orderBy('fecha', 'DESC')->paginate(30000);
             return view ('backend.superadmin.publicidad.clubmotor.index', compact ('publicaciones'));
         } else if ($user->rol == "Administrador") {
             
@@ -58,7 +58,7 @@ class PublivehiculosController extends Controller
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => $conjunto->ciudad,'sc.pais' => $conjunto->pais])
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => NULL,'sc.pais' => $conjunto->pais])
             ->groupBy('sc.publivehiculo_id')
-            ->paginate(20);
+            ->paginate(30000);
 
             return View('backend.administrador.publicidad.clubmotor.index', compact('publicaciones'));
 
@@ -88,7 +88,7 @@ class PublivehiculosController extends Controller
         }
         else if($user->rol == 'Pautante')
         {
-            $publicaciones= PublicacionVehiculos::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(20);
+            $publicaciones= PublicacionVehiculos::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(30000);
             return View('backend.pautante.publicidad.clubmotor.index', compact('publicaciones'));
         }
     }

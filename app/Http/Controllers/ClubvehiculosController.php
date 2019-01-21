@@ -156,7 +156,7 @@ class ClubvehiculosController extends Controller
             ->select('vehiculo.*','apto.apartamento','zona.zona','usuario.nombres', 'usuario.apellidos')
             ->where('vehiconjuntos.conjunto_id', '=', $conjunto)
             ->orderBy('apto.id', 'DESC')
-            ->paginate(50);
+            ->paginate(30000);
         return View('backend.administrador.censos.vehiculos.index', compact('vehiculosconjunto'));
        }
     }

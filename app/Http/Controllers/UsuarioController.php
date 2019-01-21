@@ -41,7 +41,7 @@ class UsuarioController extends Controller
 	if(isset($_GET["docId"]) && $_GET["docId"]!="" ){
 		DB::table('archivossocio')->where("id","=",$_GET["docId"])->delete();
 	}
-        $usuarios = User::paginate(30);
+        $usuarios = User::paginate(30000);
         $count = new User();
         $nombres= '';
         $noregistrados= $count->contarNoRegistrados($nombres);
@@ -389,7 +389,7 @@ class UsuarioController extends Controller
 
     public function buscar(Request $request)
     {
-        $usuarios = User::nombres($request-> get('nombres'))-> orderBy('id', 'DESC')->paginate(50);
+        $usuarios = User::nombres($request-> get('nombres'))-> orderBy('id', 'DESC')->paginate(30000);
         $count = new User();
         $nombres= '';
         $noregistrados= $count->contarNoRegistrados($nombres);

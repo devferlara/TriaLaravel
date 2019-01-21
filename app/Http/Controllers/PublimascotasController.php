@@ -43,7 +43,7 @@ class PublimascotasController extends Controller
     {   
         $user= Auth::user();
         if ($user->rol == "SuperAdmin") {
-            $publicaciones = PublicacionMascotas::orderBy('fecha', 'DESC')->paginate(20);
+            $publicaciones = PublicacionMascotas::orderBy('fecha', 'DESC')->paginate(30000);
             return view ('backend.superadmin.publicidad.clubmascotas.index', compact ('publicaciones'));
         } else if ($user->rol == "Administrador") {
 
@@ -60,7 +60,7 @@ class PublimascotasController extends Controller
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => $conjunto->ciudad,'sc.pais' => $conjunto->pais])
             ->orWhere(['sc.localidad' => NULL,'sc.ciudad' => NULL,'sc.pais' => $conjunto->pais])
             ->groupBy('sc.publimascota_id')
-            ->paginate(20);
+            ->paginate(30000);
 
             return View('backend.administrador.publicidad.clubmascotas.index', compact('publicaciones'));
         } else if ($user->rol == "ResidenteUsuario") {
@@ -89,7 +89,7 @@ class PublimascotasController extends Controller
         }
         else if($user->rol == 'Pautante')
         {
-            $publicaciones= PublicacionMascotas::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(20);
+            $publicaciones= PublicacionMascotas::where('usuario_id',$user->id)->orderBy('fecha', 'DESC')->paginate(30000);
             return View('backend.pautante.publicidad.clubmascotas.index', compact('publicaciones'));
         }
     }

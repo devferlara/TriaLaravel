@@ -1,217 +1,127 @@
 @extends('layout.admin')
 
-
-
 @section ('meta')
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 @stop
 
-<!-- Create General Section Sidebar -->
-
 @section('sidebar')
-
-    <!-- Include the menu -->
-
-    @include('backend.menu.superadmin')
-
+@include('backend.menu.superadmin')
 @endsection
 
-        <!-- Create General Section Header -->
-
 @section('head')
-
-    <!-- Include the profile header--> 
-
-    @include ('layout.head')
-
+@include ('layout.head')
 @endsection
 
 
 
 @section ('content')
 
-
-
-<div class="page-content-wrapper">
-
-    <div class="content">
-
-    @include ('errors.success')
-
-	@include ('errors.request')
-
-	@include ('errors.errors')				
-
-		<div class="col-md-1"></div>
-
-
-
-			<div class="panel-group col-md-10">
-
-				<div class="panel panel-info">
-
-					<div class="panel-heading">
-
-                		<h3 class="p-b-5 text-primary" style="text-align:center;"><span class="semi-bold">Actualizar</span> Usuario</h3>
-
-            		</div>
-
-            	<div class="panel panel-body" style="padding:20px;">
+<div class="container-fluid">
+	<div class="row">
+		@include ('errors.success')
+		@include ('errors.request')
+		@include ('errors.errors')
+		<div class="col-md-12">
+			<div class="card mb-4">
+				<div class="card-body">
+					<h3 class="p-b-5 text-primary" style="text-align:center;">
+						<span class="semi-bold">Actualizar</span>
+						Usuario
+					</h3>
+					<br>
 
 					{!!Form::model($usuario,['route'=> ['superadmin.usuarios.update',$usuario->id],'method'=>'PUT'])!!}
 
-					<div class="form-inline">
-
-						<div class="form-group">
-
-							{!!Form::label('rol', 'Tipo de Usuario/Rol' , ['class'=>'form-control'])!!}
-
-							{!!Form::select('rol',['SuperAdmin'=>'Super Administrador', 'Administrador'=>'Administrador Conjunto', 'ResidenteUsuario'=>'Residente-Usuario', 'Socio'=>'Socio'])!!}
-
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('rol', 'Tipo de Usuario/Rol' )!!}
+								{!!Form::select('rol',['SuperAdmin'=>'Super Administrador', 'Administrador'=>'Administrador Conjunto', 'ResidenteUsuario'=>'Residente-Usuario', 'Socio'=>'Socio'],null,['class'=>'form-control'])!!}
+							</div>
 						</div>
 
-						<div class="form-group">
-
-							{!!Form::label('identificacion', 'Identificación', ['class'=>'form-control'])!!}
-
-							{!!Form::text ('identificacion', null, ['class'=>'form-control'])!!}
-
+						<div class="col-md-6">
+							<div class="form-group has-float-label mb-4 ">
+								{!!Form::label('identificacion', 'Identificación')!!}
+								{!!Form::text ('identificacion', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('genero', 'Genero')!!}
+								{!!Form::select('genero', ['Femenino'=>'Femenino', 'Masculino'=>'Masculino'],null,['class'=>'form-control'])!!}
+							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="col-md-4">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('nombres', 'Nombres')!!}
+								{!!Form::text ('nombres', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
 
-							{!!Form::label('genero', 'Genero' , ['class'=>'form-control'])!!}
+						<div class="col-md-4">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('apellidos', 'Apellidos')!!}
+								{!!Form::text ('apellidos', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
 
-							{!!Form::select('genero', ['Femenino'=>'Femenino', 'Masculino'=>'Masculino'])!!}
+						<div class="col-md-3">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('fecha_nacimiento', 'Fecha de Nacimiento')!!}
+								{!!Form::date ('fecha_nacimiento', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
 
+						<div class="col-md-3">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('email', 'Correo Electrónico')!!}
+								{!!Form::email ('email', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('telefono','Teléfono')!!}
+								{!!Form::text('telefono', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('celular', 'Celular')!!}
+								{!!Form::text('celular', null, ['class'=>'form-control'])!!}
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('Usuario')!!}
+								{!!Form::text ('username', null, ['class'=>'form-control', 'placeholder'=>'Crea un usuario'])!!}
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group has-float-label mb-4">
+								{!!Form::label('Clave o Password')!!}
+								{!!Form::password ('password', ['class'=>'form-control', 'placeholder'=>'Introduce una contraseña'])!!}
+							</div>
 						</div>
 
 					</div>
-
-					<div class="form-group">
-
-						{!!Form::label('nombres', 'Nombres', ['class'=>'form-control'])!!}
-
-						{!!Form::text ('nombres', null, ['class'=>'form-control'])!!}
-
-					</div>
-
-					<div class="form-group">
-
-						{!!Form::label('apellidos', 'Apellidos', ['class'=>'form-control'])!!}
-
-						{!!Form::text ('apellidos', null, ['class'=>'form-control'])!!}
-
-					</div>
-
-
-
-					<div class="form-inline">
-
-						<div class="form-group">
-
-							{!!Form::label('fecha_nacimiento', 'Fecha de Nacimiento', ['class'=>'form-control'])!!}
-
-							{!!Form::date ('fecha_nacimiento', null, ['class'=>'form-control'])!!}
-
-						</div>
-
-
-
-						<div class="form-group">
-
-							{!!Form::label('email', 'Correo Electrónico', ['class'=>'form-control'])!!}
-
-							{!!Form::email ('email', null, ['class'=>'form-control'])!!}
-
-						</div>
-
-					</div>	
-
-
-
-					<div class="form-group">
-
-						{!!Form::label('telefono','Teléfono', ['class'=>'form-control'])!!}
-
-						{!!Form::text('telefono', null, ['class'=>'form-control'])!!}
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						{!!Form::label('celular', 'Celular', ['class'=>'form-control'])!!}
-
-						{!!Form::text('celular', null, ['class'=>'form-control'])!!}
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						{!!Form::label('Usuario')!!}
-
-						{!!Form::text ('username', null, ['class'=>'form-control', 'placeholder'=>'Crea un usuario'])!!}
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						{!!Form::label('Clave o Password')!!}
-
-						{!!Form::password ('password', ['class'=>'form-control', 'placeholder'=>'Introduce una contraseña'])!!}
-
-					</div>
-
-
-
-						{!!Form::submit('Actualizar', ['class'=>'btn btn-primary'])!!}
-
-						{!!link_to_route('superadmin.usuarios.index', $title = 'Cancelar', $parameters = '', $attributes = ['class'=>'btn btn-danger'])!!}
+					{!!Form::submit('Actualizar', ['class'=>'btn btn-primary'])!!}
+					{!!link_to_route('superadmin.usuarios.index', $title = 'Cancelar', $parameters = '', $attributes = ['class'=>'btn btn-danger'])!!}
 
 					{!!Form::close()!!}
 
-						{!!Form::close()!!}
-
-					</div>
-
 				</div>
-
 			</div>
-
-		<div class="col-md-1"></div>
-
+		</div>				
 	</div>
-
-	<div class="col-md-12">
-
-		<hr>
-
-	</div>
-
 </div>
-
 @endsection
 
-
-
 @section ('footer')
-
- @include ('layout.footer')
-
-@stop
-
-
-
-@section ('specific_js')
-
-
-
+@include ('layout.footer')
 @stop

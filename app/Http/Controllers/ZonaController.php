@@ -51,7 +51,7 @@ class ZonaController extends Controller
             $admin = Administrador::where('usuario_id', '=', $user->id)->firstOrFail();
             $adminConjunto = AdministradorConjunto::where('administrador_id', '=', $admin->id)->firstOrFail();
             $conjunto = $adminConjunto->conjunto_id;
-            $zonas = Zona::with('conjuntos')->where('conjunto_id',$conjunto)->paginate(20);
+            $zonas = Zona::with('conjuntos')->where('conjunto_id',$conjunto)->paginate(30000);
             $count = new Zona();
             return view ('backend.administrador.zonas.index', compact('zonas','count'));
         }

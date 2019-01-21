@@ -40,7 +40,7 @@ class ConjuntoController extends Controller
         $user = Auth::user();
             if($user->rol == "SuperAdmin"){
             //Genera Redireccion si es super admin 
-                $conjuntos= Conjunto::has('administrador.usuarios')->paginate(20);
+                $conjuntos= Conjunto::has('administrador.usuarios')->paginate(30000);
                 $count = new Conjunto();
                 return view ('backend.superadmin.conjuntos.index', compact('conjuntos','count'));
             }else if($user->rol == "Administrador"){
@@ -152,7 +152,7 @@ class ConjuntoController extends Controller
             $nuevousuario = new User();
             $count = new Conjunto();
             $usuarios = $nuevousuario->obtenerUsuariosConjunto($conjunto->id);
-            $zonas= Zona::with('apartamentos.usuarios')->where('conjunto_id', $conjunto->id)->paginate(10);
+            $zonas= Zona::with('apartamentos.usuarios')->where('conjunto_id', $conjunto->id)->paginate(30000);
             return view ('backend.superadmin.conjuntos.details' , compact('conjunto', 'administrador', 'usuarios', 'count', 'zonas'));
         }else if($user->rol =="Administrador"){
             //Genera Redireccion si es super adminadministrador
@@ -246,7 +246,7 @@ class ConjuntoController extends Controller
 
     public function buscarconjunto(Request $request)
     {
-        $conjuntos = Conjunto::nombreconjunto($request-> get('nomconjunto'))-> has('administrador.usuarios')->orderBy('id', 'DESC')->paginate(20);
+        $conjuntos = Conjunto::nombreconjunto($request-> get('nomconjunto'))-> has('administrador.usuarios')->orderBy('id', 'DESC')->paginate(30000);
         $count = new Conjunto();
         return view ('backend.superadmin.conjuntos.index', compact('conjuntos', 'count'));
     }

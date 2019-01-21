@@ -170,7 +170,7 @@ class ClubmascotasController extends Controller
             ->select('mascota.*','apto.apartamento','zona.zona','usuario.nombres', 'usuario.apellidos')
             ->where('masconjuntos.conjunto_id', '=', $conjunto)
             ->orderBy('apto.id', 'DESC')
-            ->paginate(50);
+            ->paginate(30000);
         return View('backend.administrador.censos.mascotas.index', compact('mascotasconjunto'));
        }
     }
