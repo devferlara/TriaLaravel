@@ -11,7 +11,7 @@
 @section('head')
 @include('layout.head')
 @stop
-
+ 
 @section('css')
 <style>
 
@@ -83,48 +83,48 @@
 
       <div class="card mb-4">
         <div class="card-body ">
+          
           <div class="table-responsive">
-            <div class="table-responsive">
-              <table class="data-table responsive nowrap tabla_bonos_estilos" id="datos">
-                <thead>
-                  <tr>
-                    <th style="width: auto;">Fecha</th>
-                    <th style="width: auto;">Titulo</th>
-                    <th style="width: auto;">Categoria</th>
-                    <th style="width: auto;">Tienda</th>
-                    <th style="width: auto;">Logo</th>
-                    <th style="width: auto;">Local</th>
-                    <th>Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  @foreach ($publicidades as $publicidad)
+            <table class="data-table responsive nowrap tabla_bonos_estilos" id="datos">
+              <thead>
+                <tr>
+                  <th style="width: auto;">Fecha</th>
+                  <th style="width: auto;">Titulo</th>
+                  <th style="width: auto;">Categoria</th>
+                  <th style="width: auto;">Tienda</th>
+                  <th style="width: auto;">Logo</th>
+                  <th style="width: auto;">Local</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($publicidades as $publicidad)
 
-                  <tr>
-                    <td class="v-align-middle">{{$publicidad->fecha}}</td>
-                    <td class="v-align-middle">{{$publicidad->titulo}}</td>
-                    <td class="v-align-middle">{{$publicidad->categoria}}</td>
-                    <td class="v-align-middle">{{$publicidad->tienda}}</td>
-                    <td class="v-align-middle"><img class="profile-photo" alt="Logo Tienda" src="{{ asset('uploads/publicidad/'.$publicidad->logo) }}"/></td>
-                    <td class="v-align-middle">{{$publicidad->local}}</td>
-                    <td>
-                      {!!link_to_route('pautante.publicidad.bonos.show', $title = 'Ver', $parameters = $publicidad->id, $attributes = ['class'=>'btn btn-success'])!!}
-                      {!!link_to_route('pautante.publicidad.bonos.edit', $title = 'Editar', $parameters = $publicidad->id, $attributes = ['class'=>'btn btn-default','style' => 'color: white;background-color: #2b303b;'])!!}
-                      @if($publicidad->enabled == 1)
-                      <button class="btn btn-danger" type="button" onclick="detener({{$publicidad->id}})">Detener</button>
-                      @else
-                      <button class="btn btn-success" type="button" onclick="reanudar({{$publicidad->id}})">Reanundar</button>
-                    </td>
-                    @endif
-                  </tr>
-                  @endforeach
-                </tbody>
-              </table>
-              {!!$publicidades->render()!!}
-            </div>
-            <h6 style="font-weight:bold"> Total Bonos Creados: {!!$publicidades->total()!!}</h6>
+                <tr>
+                  <td class="v-align-middle">{{$publicidad->fecha}}</td>
+                  <td class="v-align-middle">{{$publicidad->titulo}}</td>
+                  <td class="v-align-middle">{{$publicidad->categoria}}</td>
+                  <td class="v-align-middle">{{$publicidad->tienda}}</td>
+                  <td class="v-align-middle"><img class="profile-photo" alt="Logo Tienda" src="{{ asset('uploads/publicidad/'.$publicidad->logo) }}"/></td>
+                  <td class="v-align-middle">{{$publicidad->local}}</td>
+                  <td>
+                    {!!link_to_route('pautante.publicidad.bonos.show', $title = 'Ver', $parameters = $publicidad->id, $attributes = ['class'=>'btn btn-success btn-xs mb-1'])!!}
+                    {!!link_to_route('pautante.publicidad.bonos.edit', $title = 'Editar', $parameters = $publicidad->id, $attributes = ['class'=>'btn btn-warning btn-xs mb-1'])!!}
+                    @if($publicidad->enabled == 1)
+                    <button class="btn btn-primary btn-xs mb-1" type="button" onclick="detener({{$publicidad->id}})">Detener</button>
+                    @else
+                    <button class="btn btn-secondary btn-xs mb-1" type="button" onclick="reanudar({{$publicidad->id}})">Reanundar</button>
+                  </td>
+                  @endif
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
+            {!!$publicidades->render()!!}
           </div>
+          <h6 style="font-weight:bold"> Total Bonos Creados: {!!$publicidades->total()!!}</h6>
         </div>
+        
       </div>
     </div>
 
@@ -132,14 +132,17 @@
 </div>
 
 
-<div class="modal fade" id="detener_modal">
-  <div class="modal-dialog">
+<div class="modal" tabindex="-1" role="dialog" id="detener_modal">
+  <div class="modal-dialog" role="document">
     <form action="{{ action('PublicidadController@changeStatus') }}" method="POST">
       <input type="hidden" name="_token" value="{{csrf_token()}}">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Detener anuncio</h4>
+          <h5 class="modal-title">Detener anuncio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
         </div>
         <div class="modal-body">
           <p>¿Está seguro que desea detener este anuncio?</p>
@@ -155,14 +158,16 @@
   </div>
 </div>
 
-<div class="modal fade" id="reanudar_modal">
-  <div class="modal-dialog">
+<div class="modal" tabindex="-1" role="dialog" id="reanudar_modal">
+  <div class="modal-dialog" role="document">
     <form action="{{ action('PublicidadController@changeStatus') }}" method="POST">
       <input type="hidden" name="_token" value="{{csrf_token()}}">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Reanudar anuncio</h4>
+          <h5 class="modal-title">Reanudar anuncio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           <p>¿Está seguro que desea reanundar este anuncio?</p>

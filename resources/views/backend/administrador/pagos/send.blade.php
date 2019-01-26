@@ -2,17 +2,17 @@
 @extends('layout.admin')
 
 @section ('meta')
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 @stop
 <!-- Create General Section Sidebar -->
 @section('sidebar')
-    <!-- Include the menu -->
-    @include('backend.menu.administrador')
+<!-- Include the menu -->
+@include('backend.menu.administrador')
 @endsection
-        <!-- Create General Section Header -->
+<!-- Create General Section Header -->
 @section('head')
-    <!-- Include the profile header--> 
-    @include ('layout.head')
+<!-- Include the profile header--> 
+@include ('layout.head')
 @endsection
 
 @section ('content')
@@ -20,77 +20,48 @@
 <script>
 
 	window.onload = function()
-    {
-        $('#payu_form').submit();  
-    }
+	{
+		$('#payu_form').submit();  
+	}
 
 </script>
 
-
-<div class="page-content-wrapper">
-
-    <div class="content">
-
-    @include ('errors.success')
-
-	@include ('errors.request')
-
-	@include ('errors.errors')			
-
-		<div class="col-md-1"></div>
-
-
-
-			<div class="panel-group col-md-10">
-
-				<div class="panel panel-info">
-
-					<div class="panel-heading">
-
-                		<h3 class="p-b-5 text-primary" style="text-align:center;"><span class="semi-bold">Por favor</span>Espere...</h3>
-
-            			</br>
-
-                		<h5 class="text-info">Lo estamos redireccionando a la plataforma de pago. </h5>
-
-            		</div>
-					
-
-
+<div class="container-fluid">
+	<div class="row">
+		@include ('errors.success')
+		@include ('errors.request')
+		@include ('errors.errors')
+		<div class="col-lg-12 col-md-12">
+			<div class="card mb-4">
+				<div class="card-body ">
+					<h3>Por favor Espere...</h3>	
+					<h5 class="text-info">Lo estamos redireccionando a la plataforma de pago. </h5>
 				</div>
-
 			</div>
-
-		<div class="col-md-1"></div>
-
+		</div>
 	</div>
-
-	<div class="col-md-12">
-
-		<hr>
-
-	</div>
-
 </div>
+
+
 
 <form action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu" id="payu_form" method="post">
 
-<input type="hidden" value="1" name="test">
-<input name="accountId" type="hidden" value="512321">
-<input type="hidden" value="508029" name="merchantId">
-<input type="hidden" value="<?php echo $reference;?>" name="referenceCode">
-<input type="hidden" value="Pago Membresia TriaGroup con Payu Ref# <?php echo $reference;?>" name="description">
-<input type="hidden" value="<?php echo $total;?>" name="amount">
-<input type="hidden" value="{{Auth::user()->email}}" name="buyerEmail">
-<input type="hidden" value="0.00" name="tax">
-<input type="hidden" value="" name="extra1">
-<input type="hidden" value="0.00" name="taxReturnBase">
-<input type="hidden" value="USD" name="currency">
-<input type="hidden" value="ES" name="lng">
-<input type="hidden" value=<?php echo $token;?> name="signature">
-<input type="hidden" value="<?php echo $responseUrl ?>" name="responseUrl">
-<input type="hidden" value="{{ action('PagosController@listenerpayu') }}" name="confirmationUrl">
-<button type="submit" value="enviar">enviar</button>
+	<input type="hidden" value="1" name="test">
+	<input name="accountId" type="hidden" value="512321">
+	<input type="hidden" value="508029" name="merchantId">
+	<input type="hidden" value="<?php echo $reference;?>" name="referenceCode">
+	<input type="hidden" value="Pago Membresia TriaGroup con Payu Ref# <?php echo $reference;?>" name="description">
+	<input type="hidden" value="<?php echo $total;?>" name="amount">
+	<input type="hidden" value="{{Auth::user()->email}}" name="buyerEmail">
+	<input type="hidden" value="0.00" name="tax">
+	<input type="hidden" value="" name="extra1">
+	<input type="hidden" value="0.00" name="taxReturnBase">
+	<input type="hidden" value="USD" name="currency">
+	<input type="hidden" value="ES" name="lng">
+	<input type="hidden" value=<?php echo $token;?> name="signature">
+	<input type="hidden" value="<?php echo $responseUrl ?>" name="responseUrl">
+	<input type="hidden" value="{{ action('PagosController@listenerpayu') }}" name="confirmationUrl">
+	<button type="submit" value="enviar">enviar</button>
 </form>
 
 
@@ -129,15 +100,9 @@ reference_sale=2015-05-27 13:04:37 -->
 
 @section ('footer')
 
- @include ('layout.footer')
+@include ('layout.footer')
+{!!Html::script('build/assets/js/script/listaraptos.js')!!}
 
 @stop
 
-
-
-@section('specific_js')
-
-	{!!Html::script('build/assets/js/script/listaraptos.js')!!}
-
-@stop
 

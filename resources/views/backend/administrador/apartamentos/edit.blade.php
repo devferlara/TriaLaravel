@@ -13,56 +13,63 @@
 @endsection
 
 @section ('content')
-<div class="page-content-wrapper">
-    <div class="content">
-        @include ('errors.success')
-        @include ('errors.request')
-        @include ('errors.errors')          
-        <div class="col-md-1"></div>
+<div class="container-fluid">
+  <div class="row">
+    @include ('errors.success')
+    @include ('errors.request')
+    @include ('errors.errors') 
+    <div class="col-md-12">
+      <div class="card mb-4 tabs_create_apartamentos_estilo">
+        <div class="card-body tabs_create_apartamentos_estilo">
+          <h3 class="p-b-5 text-primary" style="text-align:center;"><span class="semi-bold">Nuevo</span> Anuncio Publicitario- Bono de Descuento</h3>
+          <h4 class="text-info" style="text-align: center">Podrás crear anuncios publicitarios promocionando servicios y productos cubriendo los interés de tu comunidad. </h4>
+          <br>
+          {!!Form::model($apartamento,['route'=> ['administrador.apartamentos.update',$apartamento->id],'method'=>'PUT'])!!}
 
-        <div class="panel-group col-md-10">
-
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="p-b-5 text-primary" style="text-align:center;"><span class="semi-bold">Actualizar </span> Apartamento</h3>
-                </br>
-                <h5 class="text-info">Si ya creaste un apartamento y necesitas actualizar datos, solo debes confirmar los siguientes ! recuerda que todos los campos son requeridos *.! </h5>
+          <div class="col-md-6">
+            <div class="form-group has-float-label mb-4">
+              {!!Form::label('conjunto', 'Conjunto Residencial ')!!}
+              {!!Form::select('conjunto', $conjuntos, null, ['class'=>'form-control', 'id'=>'conjunto'])!!}
             </div>
-            <div class="panel panel-body" style="padding:20px;">
-                {!!Form::model($apartamento,['route'=> ['administrador.apartamentos.update',$apartamento->id],'method'=>'PUT'])!!}
+          </div>
 
-                <div class="form-group">
-                    {!!Form::label('conjunto', 'Conjunto Residencial ', ['class'=>'form-control'])!!}
-                    {!!Form::select('conjunto', $conjuntos, null, ['class'=>'form-control', 'id'=>'conjunto'])!!}
-                </div>
-                <div class="form-group">
-                    {!!Form::label('zona', 'Zona o Unidad', ['class'=>'form-control'])!!}
-                    {!!Form::select('zona', $zonas, $apartamento->zona_id, ['class'=>'form-control', 'id'=>'zona'])!!}
-                </div>
 
-                <div class="form-group">
-                    {!!Form::label('apartamento', 'Apartamento', ['class'=>'form-control'])!!}
-                    {!!Form::text ('apartamento', null, ['class'=>'form-control'])!!}
-                </div>
-
-                <div class="form-group">
-                    {!!Form::label('descripcion', 'Descripción del Apartamento', ['class'=>'form-control'])!!}
-                    <div class="wysiwyg5-wrapper b-a b-grey">
-                        <textarea id="descripcion" name="descripcion" class="wysiwyg demo-form-wysiwyg" placeholder="Descripcion del apartamento..."></textarea>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    {!!Form::submit('Actualizar Apartamento', ['class'=>'btn btn-primary'])!!}
-                    {!!link_to_route('administrador.apartamentos.index', $title = 'Cancelar', $parameters = null, $attributes = ['class'=>'btn btn-danger'])!!}                        
-                </div>
-                {!!Form::close()!!}
+          <div class="col-md-6">
+            <div class="form-group has-float-label mb-4">
+              {!!Form::label('zona', 'Zona o Unidad')!!}
+              {!!Form::select('zona', $zonas, $apartamento->zona_id, ['class'=>'form-control', 'id'=>'zona'])!!}
             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group has-float-label mb-4">
+              {!!Form::label('apartamento', 'Apartamento')!!}
+              {!!Form::text ('apartamento', null, ['class'=>'form-control'])!!}
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group has-float-label mb-4">
+              {!!Form::label('descripcion', 'Descripción del Apartamento', ['class'=>'form-control'])!!}
+              <div class="wysiwyg5-wrapper b-a b-grey">
+                <textarea id="descripcion" name="descripcion" class="wysiwyg demo-form-wysiwyg form-control" placeholder="Descripcion del apartamento..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            {!!Form::submit('Actualizar Apartamento', ['class'=>'btn btn-primary'])!!}
+            {!!link_to_route('administrador.apartamentos.index', $title = 'Cancelar', $parameters = null, $attributes = ['class'=>'btn btn-danger'])!!}                        
+          </div>
+          {!!Form::close()!!}
+
+
         </div>
+      </div>
     </div>
-    <div class="col-md-1"></div>
+  </div>
 </div>
-</div>
+
 
 @stop
 

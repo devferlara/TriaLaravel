@@ -15,7 +15,7 @@
     {!!Html::style('build/assets/css_new/vendor/datatables.responsive.bootstrap4.min.css')!!}
     {!!Html::style('build/assets/css_new/vendor/quill.snow.css')!!}
     {!!Html::style('build/assets/css_new/vendor/quill.bubble.css')!!}
-    {!!Html::style('build/assets/css_new/main.css')!!}
+    {!!Html::style('build/assets/css_new/main.css')!!} 
 </head>
 <body id="app-container" class="menu-default show-spinner">
 <!-- START PAGE-CONTAINER -->
@@ -42,6 +42,8 @@
 {!!Html::script('build/assets/js_new/vendor/ckeditor5-build-classic/ckeditor.js')!!}
 {!!Html::script('build/assets/js_new/vendor/select2.full.js')!!}
 {!!Html::script('build/assets/js_new/dore.script.js')!!}
+{!!Html::script('build/assets/js/init.js')!!}
+{!!Html::script('build/assets/js/perfil_socio.js')!!}
 {!!Html::script('build/assets/js/script/listarciudades.js?v=1')!!}
 {!!Html::script('build/assets/js/script/pagos.js')!!}
 {!!Html::script('build/assets/js_new/scripts.js')!!}

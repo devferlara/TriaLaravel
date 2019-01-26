@@ -13,11 +13,12 @@
     {!!Html::style('build/assets/css_new/vendor/perfect-scrollbar.css')!!}
     {!!Html::style('build/assets/css_new/vendor/bootstrap-float-label.min.css')!!}
     {!!Html::style('build/assets/css_new/vendor/dataTables.bootstrap4.min.css')!!}
+    {!!Html::style('build/assets/css_new/vendor/quill.bubble.css')!!}
     {!!Html::style('build/assets/css_new/vendor/datatables.responsive.bootstrap4.min.css')!!}
     {!!Html::style('build/assets/css_new/vendor/quill.snow.css')!!}
     {!!Html::style('build/assets/css_new/vendor/quill.bubble.css')!!}
     {!!Html::style('build/assets/css_new/main.css')!!}
- 
+  
 </head>
 <body id="app-container" class="menu-default show-spinner latouy_mensaje">
 <!-- START PAGE-CONTAINER -->
@@ -37,15 +38,20 @@
 {!!Html::script('build/assets/js_new/vendor/bootstrap.bundle.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/perfect-scrollbar.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/datatables.min.js')!!}
-{!!Html::script('build/assets/js/script/admin.js')!!}
-
 {!!Html::script('build/assets/js_new/vendor/mousetrap.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/quill.min.js')!!}
+{!!Html::script('build/assets/js/script/admin.js')!!}
+{!!Html::script('build/assets/js/scripts.js')!!}
 {!!Html::script('build/assets/js_new/vendor/ckeditor5-build-classic/ckeditor.js')!!}
-{!!Html::script('build/assets/js_new/dore.script.js')!!}
-{!!Html::script('build/assets/js/script/listarciudades.js?v=1')!!}
 {!!Html::script('build/assets/js_new/vendor/select2.full.js')!!}
+{!!Html::script('build/assets/js_new/dore.script.js')!!}
+{!!Html::script('build/assets/js/init.js')!!}
+{!!Html::script('build/assets/js/perfil_socio.js')!!}
+{!!Html::script('build/assets/js/script/listarciudades.js?v=1')!!}
+{!!Html::script('build/assets/js/script/pagos.js')!!}
 {!!Html::script('build/assets/js_new/scripts.js')!!}
+
+
 
 
 </body>

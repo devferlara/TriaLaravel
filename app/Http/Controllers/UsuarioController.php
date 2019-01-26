@@ -135,7 +135,7 @@ class UsuarioController extends Controller
                 return Redirect::to('/superadmin/usuarios');
             }else if($user->rol == "Administrador"){
                 Session::flash('message-error','El correo electrónico ya existe en la base de datos.');
-                return Redirect::to('/administrador/usuarios');
+                return Redirect::to('/administrador/usuarioss');
             }
         }
 

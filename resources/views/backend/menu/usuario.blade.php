@@ -1,69 +1,85 @@
-<!-- BEGIN SIDEBPANEL-->
-<nav class="page-sidebar" data-pages="sidebar">
-    <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+ 
+<div class="sidebar">
+    <div class="main-menu">
+        <div class="scroll">
+            <ul class="list-unstyled">
 
-    <!-- BEGIN SIDEBAR MENU HEADER-->
-    <div class="sidebar-header">
-        <img src="{{ asset('build/assets/img/logo_login.png') }}" alt="logo" class="brand border-radius" data-src="{{ asset('build/assets/img/logo_login.png') }}" data-src-retina="{{ asset('build/assets/img/logo_login.png') }}" width="45" height="40">
-        <div class="sidebar-header-controls">
-            <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
-            </button>
-            <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
-            </button>
+                <li>
+                    <a href="/usuario">
+                        <i class="simple-icon-home"></i> Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/usuario/mensajes">
+                        <i class="iconsmind-Envelope-2"></i> Mensajes
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="/usuario/noticias">
+                        <i class="simple-icon-plus"></i> Anuncios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/usuario/clubmascotas">
+                        <i class="iconsmind-Dog"></i> Club Mascotas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/usuario/clubmotor">
+                        <i class="iconsmind-Car-2"></i> Club Motor
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="#Descuentos">
+                        <i class="iconsmind-Ribbon-2"></i> Descuentos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/usuario/facturas">
+                        <i class="simple-icon-user"></i> Mi Cuenta
+                    </a>
+                </li>
+
+            </ul>
         </div>
     </div>
-    <!-- END SIDEBAR MENU HEADER-->
-    <!-- START SIDEBAR MENU -->
-    <div class="sidebar-menu">
-        <!-- BEGIN SIDEBAR MENU ITEMS-->
-        <ul class="menu-items">
-            <li class="m-t-5 ">
-                <a href="/usuario"><span class="title">Inicio</span></a>
-                <span class="icon-thumbnail"><i class="pg-home"></i></span>
-            </li>
 
-            <li class="m-t-5 ">
-                <a href="/usuario/mensajes"><span class="title">Mensajes</span></a>
-                <span class="icon-thumbnail"><i class="fa fa-comments"></i></span>
-            </li>
+    <div class="sub-menu sub_menu_estilos">
+        <div class="scroll">
+            <ul class="list-unstyled" data-link="Descuentos">
+                
+                <li class="titulo_en_sub_menu">
+                    <a  href="/usuario/descuentos/bonos">
+                        <i class="simple-icon-user"></i> Bonos
+                    </a>
+                </li>
 
-            <li class="m-t-5 ">
-                <a href="/usuario/noticias"><span class="title">Anuncios</span></a>
-                <span class="icon-thumbnail"><i class="fa fa-newspaper-o"></i></span>
-            </li>
-            <li class="m-t-5 ">
-                <a href="/usuario/clubmascotas"><span class="title">Club Mascotas</span></a>
-                <span class="icon-thumbnail"><i class="fa fa-paw"></i></span>
-            </li>
-            <li class="m-t-5 ">
-                <a href="/usuario/clubmotor"><span class="title">Club Motor</span></a>
-                <span class="icon-thumbnail"><i class="fa fa-car"></i></span>
-            </li>
-            <li class="">
-                <a href="javascript:;"><span class="title">Descuentos</span>
-                    <span class="arrow"></span></a>
-                <span class="icon-thumbnail"><i class="fa fa-bullhorn"></i></span>
-                <ul class="sub-menu">
-                    <li>
-                    <a href="/usuario/descuentos/bonos"><span class="title">Bonos</span></a>
-                    <span class="icon-thumbnail"><i class="fa fa-gift"></i></span>
-                    </li>
-                    <li>
-                    <a href="/usuario/descuentos/clubmascotas"><span class="title">Club Mascotas</span></a>
-                    <span class="icon-thumbnail"><i class="fa fa-paw"></i></span>
-                    </li>
-                    <li>
-                     <a href="/usuario/descuentos/clubmotor"><span class="title">Club Motor</span></a>
-                    <span class="icon-thumbnail"><i class="fa fa-car"></i></span>
-                    </li>
-                </ul>
-            </li>
-            <li class="m-t-5 ">
-                <a href="/usuario/facturas"><span class="title">Mi Cuenta</span></a>
-                <span class="icon-thumbnail"><i class="fa fa-money"></i></span>
-            </li>
-        </ul>
-        <div class="clearfix"></div>
+                <hr style="margin-top: 20px;">
+
+                <li class="titulo_en_sub_menu">
+                    <a  href="/usuario/descuentos/clubmascotas">
+                        <i class="iconsmind-Dollar-Sign2"></i> Club Mascotas
+                    </a>
+                </li>
+
+                <hr style="margin-top: 20px;">
+
+                <li class="titulo_en_sub_menu">
+                    <a  href="/usuario/descuentos/clubmotor">
+                        <i class="iconsmind-Dollar-Sign2"></i> Club Motor
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
     </div>
-    <!-- END SIDEBAR MENU -->
-</nav>
+</div>

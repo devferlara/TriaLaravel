@@ -11,7 +11,7 @@
 @section('head')
 @include ('layout.head')
 @endsection
-
+ 
 @section ('content')
 
 <div class="container-fluid">
