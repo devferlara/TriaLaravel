@@ -137,4 +137,6 @@
 
 @section ('footer')
 @include ('layout.footer')
+{!!Html::script('build/assets/js/script/listarzonas.js')!!}
+{!!Html::script('build/assets/js/script/listarzonasmultiples.js')!!}
 @stop

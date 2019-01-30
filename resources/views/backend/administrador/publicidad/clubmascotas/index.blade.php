@@ -26,7 +26,9 @@
 
 <div class="container-fluid">
   <div class="row">
-
+    @include ('errors.errors')
+    @include ('errors.success')
+    @include ('errors.request')
 
     <div class="col-12">
       <h1>Vista Administrador - Bonos de Club Mascotas</h1>
@@ -122,4 +124,5 @@
 
 @section ('footer')
 @include('layout.footer')
+{!!Html::script('build/assets/js/script/busqueda.js')!!}
 @stop

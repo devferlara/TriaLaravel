@@ -5,11 +5,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Home</title>
-
+  <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {!!Html::style('build/assets/font/iconsmind/style.css')!!}
   {!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
+  {!!Html::style('build/assets/css_new/vendor/bootstrap-float-label.min.css')!!}
   {!!Html::style('build/assets/css_new/vendor/bootstrap-stars.css')!!}
+  {!!Html::style('build/assets/css_new/estilos.css')!!}
   {!!Html::style('build/assets/css_new/vendor/bootstrap.min.css')!!}
   {!!Html::style('build/assets/css_new/vendor/owl.carousel.min.css')!!}
   {!!Html::style('build/assets/css_new/vendor/bootstrap-stars.css')!!}
@@ -19,41 +21,47 @@
 </head>
 
 
-<body>
+<body class="show-spinner">
   <div class="landing-page">
     <div class="mobile-menu">
       <a href="#home" class="logo-mobile scrollTo">
         <span></span>
       </a>
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#features" class="scrollTo">FEATURES</a></li>
-        <li class="nav-item"><a href="#reviews" class="scrollTo">REVIEWS</a></li>
-        <li class="nav-item"><a href="#pricing" class="scrollTo">PRICING</a></li>
-        <li class="nav-item mb-2"><a href="#blog" class="scrollTo">BLOG</a></li>
-        <li class="nav-item">
-          <div class="separator"></div>
-        </li>
-        <li class="nav-item mt-2"><a href="#apps">SIGN IN</a></li>
-        <li class="nav-item"><a href="#apps">SIGN UP</a></li>
+        <li class="nav-item"><a href="#home" class="scrollTo">INICIO</a></li>
+        <li class="nav-item"><a href="#tria_app" class="scrollTo">TRIA APP</a></li>
+        <li class="nav-item"><a href="#funcionalidades" class="scrollTo">FUNCIONALIDADES</a></li>
+        <li class="nav-item"><a href="#franquicias" class="scrollTo">FRANQUICIAS</a></li>
+        @if(Auth::check())
+        <li class="nav-item"><a href="/login" class="scrollTo">Ir al dashboard</a></li>
+        @else
+        <li class="nav-item"><a href="/login" >LOGIN</a></li>
+        <li class="nav-item"><a href="/registroAdmin" >REGISTRO</a></li>
+        <li class="nav-item"><a href="/registroPautante" >PAUTA</a></li>
+        @endif
       </ul>
     </div>
 
-    <div class="main-container">
-      <nav class="landing-page-nav">
+    <div class="main-container ">
+      <nav class="landing-page-nav estilos_menu_home">
         <div class="container d-flex align-items-center justify-content-between">
-          <a class="navbar-logo pull-left scrollTo" href="#home">
-            <span class="white"></span>
-            <span class="dark"></span>
+          <a class="navbar-logo pull-left scrollTo logo_index" href="#home">
+            <img src="{{asset('build/assets/img/logo_login.png')}}">
           </a>
           <ul class="navbar-nav d-none d-lg-flex flex-row">
-            <li class="nav-item"><a href="#features" class="scrollTo">FEATURES</a></li>
-            <li class="nav-item"><a href="#reviews" class="scrollTo">REVIEWS</a></li>
-            <li class="nav-item"><a href="#pricing" class="scrollTo">PRICING</a></li>
-            <li class="nav-item"><a href="#blog" class="scrollTo">BLOG</a></li>
-            <li class="nav-item mr-3"><a href="#apps">SIGN IN</a></li>
-            <li class="nav-item pl-2">
-              <a class="btn btn-outline-semi-light btn-sm pr-4 pl-4" href="#">SIGN UP</a>
-            </li>
+            <li class="nav-item"><a href="#home" class="scrollTo">INICIO</a></li>
+            <li class="nav-item"><a href="#tria_app" class="scrollTo">TRIA APP</a></li>
+            <li class="nav-item"><a href="#funcionalidades" class="scrollTo">FUNCIONALIDADES</a></li>
+            <li class="nav-item"><a href="#contactenos" class="scrollTo">CONTACTENOS</a></li>
+            <li class="nav-item"><a href="#franquicias" class="scrollTo">FRANQUICIAS</a></li>
+            @if(Auth::check())
+            <li class="nav-item"><a href="/login">IR AL DASHBOARD</a></li>
+            @else
+            <li class="nav-item"><a href="/login" >LOGIN</a></li>
+            <li class="nav-item"><a href="/registroAdmin" >REGISTRO</a></li>
+            <li class="nav-item"><a href="/registroPautante" >PAUTA</a></li>
+            @endif
+
           </ul>
           <a href="#" class="mobile-menu-button">
             <i class="simple-icon-menu"></i>
@@ -79,18 +87,17 @@
                     Conjuntos Residenciales , Condominios , Edificios Corporativos y centros comerciales.<br />
                     <br />
                   </p>
-                  <a class="btn btn-outline-semi-light btn-xl" href="LandingPage.Auth.Register.html">REGISTER
-                  NOW</a>
+                  <a class="btn btn-outline-semi-light btn-xl" href="/registroAdmin">REGISTRO</a>
                 </div>
               </div>
               <div class="col-12 col-xl-7 offset-xl-1 col-lg-7 col-md-6  d-none d-md-block">
                 <a href="#">
-                  <img alt="hero" src="{{asset('build/assets/imagenes/landing-page/home-hero.png')}}" />
+                  <img alt="hero" src="{{asset('build/assets/imagenes/home_principal.png')}}" />
                 </a>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="funcionalidades">
               <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
                 <h1 style="color: #fff">FUNCIONALIDADES</h1>
                 <p style="color: #fff">¿ Que propiedades pueden hacer parte de TRIA APP ? <br>
@@ -103,88 +110,81 @@
             <div class="row">
               <div class="col-12 p-0">
                 <div class="owl-container">
-                  <div class="owl-carousel home-carousel">
+                  <div class="owl-carousel home-carousel carousel_home_estilos">
                     <div class="card">
                       <div class="card-body text-center">
                         <div>
-                          <i class="iconsmind-Cupcake large-icon"></i>
-                          
+                          <i class="iconsmind-Big-Data large-icon"></i>
                         </div>
                         <div>
                           <p class="detail-text">
                             Actualización de la base de datos de la propiedad en tiempo real
                           </p>
                         </div>
-                        <a class="btn btn-link font-weight-semibold" href="#">VIEW</a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-body text-center">
                         <div>
-                          <i class="iconsmind-Line-Chart2 large-icon"></i>
-                          <h5 class="mb-0 font-weight-semibold">
-                            Superfine Charts
-                          </h5>
+                          <i class="iconsmind-Dollar large-icon"></i>
                         </div>
                         <div>
                           <p class="detail-text">
-                            Charts that looks good with color, opacity, border
-                            and shadow.
+                            Enlace con el banco para los pagos de la propiedad
                           </p>
                         </div>
-                        <a class="btn btn-link font-weight-semibold" href="#">VIEW</a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-body text-center">
                         <div>
-                          <i class="iconsmind-Three-ArrowFork large-icon"></i>
-                          <h5 class="mb-0 font-weight-semibold">
-                            Two Panels Menu
-                          </h5>
+                          <i class="iconsmind-Sea-Dog large-icon"></i>
                         </div>
                         <div>
                           <p class="detail-text">
-                            A menu that looks good and does the job well.
+                            Censo de mascotas y vehículos
                           </p>
                         </div>
-                        <a class="btn btn-link font-weight-semibold" href="#">VIEW</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <div>
-                          <i class="iconsmind-Funny-Bicycle large-icon"></i>
-                          <h5 class="mb-0 font-weight-semibold">
-                            Layouts for the Job
-                          </h5>
-                        </div>
-                        <div>
-                          <p class="detail-text">
-                            Lots of different layouts for different jobs.
-                          </p>
-                        </div>
-                        <a class="btn btn-link font-weight-semibold" href="#">VIEW</a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-body text-center">
                         <div>
-                          <i class="iconsmind-Full-View large-icon"></i>
-                          <h5 class="mb-0 font-weight-semibold">
-                            Extra Responsive
-                          </h5>
+                          <i class="iconsmind-Arrow-Inside large-icon"></i>
                         </div>
                         <div>
                           <p class="detail-text">
-                            Better experiences for smaller and larger screens
-                            by adding Xxl and Xxs.
+                            Comunicación en doble vía administrador al móvil del residente y residente a la web del administrador y envío de archivos
                           </p>
                         </div>
-                        <a class="btn btn-link font-weight-semibold" href="#">VIEW</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <div>
+                          <i class="iconsmind-Folder-WithDocument large-icon"></i>
+                        </div>
+                        <div>
+                          <p class="detail-text">
+                            Distribución de los recibos y pagos de administración
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <div>
+                          <i class="iconsmind-Police-Man large-icon"></i>
+                        </div>
+                        <div>
+                          <p class="detail-text">
+                            Contacto con la policía del sector
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -198,646 +198,122 @@
           </a>
         </div>
 
+
+
         <div class="section">
-          <div class="container" id="features">
+          <div class="container" id="franquicias">
 
-            <div class="row feature-row">
-              <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center">
+            <div class="row ">
+              <div class="col-12 col-md-12 col-lg-12 d-flex align-items-center">
                 <div class="d-flex">
                   <div class="feature-icon-container">
                     <div class="icon-background">
                       <i class="fas fa-fw fa-ban"></i>
                     </div>
                   </div>
-                  <div class="feature-text-container">
-                    <h2>Pleasant Design</h2>
-                    <p>
-                      As a web developer we enjoy to work on something looks
-                      nice. It is not an absolute necessity but it really
-                      motivates us that final product will look good for user
-                      point of view. <br />
-                      <br />
-                      So we put a lot of work into colors, icons, composition
-                      and design harmony. Themed components and layouts with
-                      same design language. <br />
-                      <br />
-                      We kept user experience principles always at the heart
-                      of the design process.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 offset-lg-1 offset-md-0 position-relative">
-                <div class="background-item-1"></div>
-                <img alt="feature" class="feature-image-right feature-image-charts position-relative" src="{{asset('build/assets/imagenes/landing-page/feature.png')}}" />
-              </div>
-            </div>
-
-            <div class="row feature-row">
-              <div class="col-12 col-md-6 col-lg-6 order-2 order-md-1">
-                <img alt="feature" class="feature-image-left feature-image-charts" src="{{asset('build/assets/imagenes/landing-page/feature-2.png')}}" />
-              </div>
-
-              <div class="col-12 col-md-6 offset-md-0 col-lg-5 offset-lg-1 d-flex align-items-center order-1 order-md-2">
-                <div class="d-flex">
-                  <div class="feature-icon-container">
-                    <div class="icon-background">
-                      <i class="fas fa-fw fa-ban"></i>
-                    </div>
-                  </div>
-                  <div class="feature-text-container">
-                    <h2>Layouts for the Job</h2>
-                    <p>
-                      Layouts are the real thing, they need to be accurate and
-                      right for the job. They should be functional for both
-                      user and developer. <br />
-                      <br />
-                      We created lots of different layouts for different jobs.
-                      <br />
-                      <br />
-                      Listing pages with view mode changing capabilities,
-                      shift select and select all functionality, application
-                      layouts with an additional menu, authentication and
-                      error layouts which has a different design than the
-                      other pages were our main focus. We also created details
-                      page with tabs that can hold many components.
+                  <div class="feature-text-container text-center">
+                    <h1>FRANQUICIAS</h1>
+                    <p>Adquiere la franquicia de TRIA y ejecuta un negocio del 200 % de ganancia a 12 meses, podrás abrir mercado con las propiedades y mantenerlas por periodos renovables de 1 año. para mayor información escribe a triainternacional@gmail.com. o al whatsapp 57- 3173719404.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row feature-row">
-              <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center">
-                <div class="d-flex">
-                  <div class="feature-icon-container">
-                    <div class="icon-background">
-                      <i class="fas fa-fw fa-ban"></i>
-                    </div>
-                  </div>
-                  <div class="feature-text-container">
-                    <h2>Superfine Charts</h2>
-                    <p>
-                      Using charts is a good way to visualize data but they
-                      often look ugly and breaks the rhythm of design. <br />
-                      <br />
-                      We concentrated on a single chart library and tried to
-                      create charts that looks good with color, opacity,
-                      border and shadow. <br />
-                      <br />
-                      Used certain plugins and created some to make charts
-                      even more useful and beautiful.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 offset-lg-1 offset-md-0 ">
-                <img alt="feature" class="feature-image-right feature-image-charts" src="{{asset('build/assets/imagenes/landing-page/feature-3.png')}}" />
-              </div>
-            </div>
+            
           </div>
         </div>
 
         <div class="section background">
-          <div class="container" id="reviews">
+          <div class="container estilos_contacto_home" id="contactenos">
             <div class="row">
-              <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
-                <h1>Client Reviews</h1>
-                <p>
-                  People love Dore. We have received lots of awesome reviews
-                  for desing quality, documentation, code quality,
-                  flexibility, features, support and other categories. Here
-                  are some of them.
-                </p>
+
+              <div class="col-md-12 text-center">
+                <h1>CONTACTENOS</h1>
               </div>
-              <div class="col-12 p-0">
-                <div class="owl-container">
-                  <div class="owl-carousel review-carousel">
-                    <div class="card">
-                      <div class="card-body text-center pt-5 pb-5">
-                        <div>
-                          <img alt="profile" class="img-thumbnail border-0 rounded-circle mb-4 list-thumbnail mx-auto" src="{{asset('build/assets/imagenes/profile-pic-l-7.jpg')}}" />
-                          <h5 class="mb-0 font-weight-semibold color-theme-1 mb-3">
-                            codebars
-                          </h5>
-                          <select class="rating" data-current-rating="5" data-readonly="true">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                          <p class="text-muted text-small">Code Quality</p>
-                        </div>
-                        <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex align-items-center">
-                          <p class="mb-0 ">
-                            Many that live deserve death. And some that die
-                            deserve life. Can you give it to them? Then do not
-                            be eager to deal out death in judgement. For even
-                            the very wise cannot see all ends.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="card">
-                      <div class="card-body text-center pt-5 pb-5">
-                        <div>
-                          <img alt="profile" class="img-thumbnail border-0 rounded-circle mb-4 list-thumbnail mx-auto" src="{{asset('build/assets/imagenes/profile-pic-l-11.jpg')}}" />
-                          <h5 class="mb-0 font-weight-semibold color-theme-1 mb-3">
-                            helvetica
-                          </h5>
-                          <select class="rating" data-current-rating="5" data-readonly="true">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                          <p class="text-muted text-small">Code Quality</p>
-                        </div>
-                        <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex align-items-center">
-                          <p class="mb-0 ">
-                            That's the only place in all the lands we've ever
-                            heard of that we don't want to see any closer; and
-                            that's the one place we're trying to get to! And
-                            that's just where we can't get, nohow.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-12 col-md-5">  
+                <p>
+                  Dejénos su mensaje y pronto estableceremos contacto dispuestos a llevarle a conocer la mejor experiencia en administración de propiedad horizontal.
+                </p>
+                <ul>
+                  <li>
+                    <i class="iconsmind-Telephone"> CEL +57 317 371 94 04</i>
+                  </li>
+                  <li>
+                    <i class="iconsmind-Checked-User"> Jorge Andrés González</i>
+                  </li>
+                  <li>
+                    <i class="iconsmind-Envelope"> triainternacional@gmail.com</i>
+                  </li>
+                  <li>
+                    <i class="iconsmind-Globe"> www.triagroup.co</i>
+                  </li>
+                </ul>
+              </div>
 
-                    <div class="card">
-                      <div class="card-body text-center pt-5 pb-5">
-                        <div>
-                          <img alt="profile" class="img-thumbnail border-0 rounded-circle mb-4 list-thumbnail mx-auto" src="{{asset('build/assets/imagenes/profile-pic-l-2.jpg')}}" />
-                          <h5 class="mb-0 font-weight-semibold color-theme-1 mb-3">
-                            logorrhea
-                          </h5>
-                          <select class="rating" data-current-rating="5" data-readonly="true">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                          <p class="text-muted text-small">Code Quality</p>
-                        </div>
-                        <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex align-items-center">
-                          <p class="mb-0 ">
-                            Yet such is oft the course of deeds that move the
-                            wheels of the world: small hands do them because
-                            they must, while the eyes of the great are
-                            elsewhere.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-body text-center pt-5 pb-5">
-                        <div>
-                          <img alt="profile" class="img-thumbnail border-0 rounded-circle mb-4 list-thumbnail mx-auto" src="{{asset('build/assets/imagenes/profile-pic-l-8.jpg')}}" />
-
-                          <h5 class="mb-0 font-weight-semibold color-theme-1 mb-3">
-                            nanaimo
-                          </h5>
-                          <select class="rating" data-current-rating="5" data-readonly="true">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                          <p class="text-muted text-small">Code Quality</p>
-                        </div>
-                        <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex align-items-center">
-                          <p class="mb-0 ">
-                            I have passed through fire and deep water, since
-                            we parted. I have forgotten much that I thought I
-                            knew, and learned again much that I had forgotten
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-body text-center pt-5 pb-5">
-                        <div>
-                          <img alt="profile" class="img-thumbnail border-0 rounded-circle mb-4 list-thumbnail mx-auto" src="{{asset('build/assets/imagenes/profile-pic-l-11.jpg')}}" />
-                          <h5 class="mb-0 font-weight-semibold color-theme-1 mb-3">
-                            helvetica
-                          </h5>
-                          <select class="rating" data-current-rating="5" data-readonly="true">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                          <p class="text-muted text-small">Code Quality</p>
-                        </div>
-                        <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex align-items-center">
-                          <p class="mb-0 ">
-                            That's the only place in all the lands we've ever
-                            heard of that we don't want to see any closer; and
-                            that's the one place we're trying to get to! And
-                            that's just where we can't get, nohow.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-md-6">
+                <div id="contact-result"></div>
+                <div id="contact-form">
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}" id="token">
+                  
+                  <div class="form-group has-float-label mb-4">
+                    <label for="name">Nombre*</label>
+                    <input class="form-control" type="text" name="name" id="name" required>
+                  </div>
+                  
+                  <div class="form-group has-float-label mb-4">
+                    <label for="email" >Email*</label>
+                    <input class="form-control" type="email" name="email" id="email" required>
                   </div>
 
-                  <div class="slider-nav text-center">
-                    <a href="#" class="left-arrow owl-prev">
-                      <i class="simple-icon-arrow-left"></i>
-                    </a>
-                    <div class="slider-dot-container"></div>
-                    <a href="#" class="right-arrow owl-next">
-                      <i class="simple-icon-arrow-right"></i>
-                    </a>
+                  <div class="form-group has-float-label mb-4">
+                    <label for="message" >Mensaje</label>
+                    <textarea style="resize: none" class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
                   </div>
+                  <input class="btn btn-primary mb-1" type="submit" value="Enviar Mensaje" id="submit-btn">
                 </div>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div class="section mb-0">
-          <div class="container" id="pricing">
+        <div class="section padding_triap_group">
+          <div class="container" id="tria_app">
 
-            <div class="row">
-              <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
-                <h1>Pricing</h1>
-                <p>
-                  We tried to create an admin theme that we would like to use
-                  ourselves so we listed our priorities. We would like to have
-                  a theme that is not over complicated to use, does the job
-                  well, contains must have components and looks really nice.
-                </p>
+            <div class="row feature-row">
+              <div class="col-12 col-md-12 col-lg-12 d-flex align-items-center">
+                <div class="d-flex">
+                  <div class="feature-icon-container">
+                    <div class="icon-background">
+                      <i class="fas fa-fw fa-ban"></i>
+                    </div>
+                  </div>
+                  <div class="feature-text-container ">
+                    <h1 style="text-align: center;display: block">TRIA APP</h1>
+                    <p>Tria APP, es una plataforma que permite que los residentes de las propiedades en general tengan una aplicación móvil, en donde el administrador de la propiedad puede comunicar su gestión a los móviles de los residentes en tiempo real. Optimizando la comunicación y haciéndola mas efectiva. Con presencia en seis (6) países ( Argentina, Alemania, Bolivia, Colombia, Mexico e Italia). TRIA se proyecta hacer la herramienta mas efectiva en el mundo para la gestión dentro de la propiedad horizontal.<br> El uso de las aplicaciones móviles en el mundo esta revolucionando la comunicación a nivel global permitiendo una interacción directa con el teléfono móvil del usuario. Es el momento de hacer parte del cambio y que su propiedad ingrese a la era de la información.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-
-            <div class="row row-eq-height price-container mt-5">
-
-              <div class="col-md-12 col-lg-4 mb-4 price-item">
-                <div class="card">
-                  <div class="card-body pt-5 pb-5 d-flex flex-lg-column flex-md-row flex-sm-row flex-column">
-                    <div class="price-top-part">
-                      <i class="iconsmind-Male large-icon"></i>
-                      <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">DEVELOPER</h5>
-                      <p class="text-large mb-2 text-default">$11</p>
-                      <p class="text-muted text-small">User/Month</p>
-                    </div>
-                    <div class="pl-3 pr-3 pt-3 pb-0 d-flex price-feature-list flex-column">
-                      <ul class="list-unstyled">
-                        <li>
-                          <p class="mb-0 ">
-                            Number of end products 1
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Two factor authentication
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Free updates
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Forum support
-                          </p>
-                        </li>
-                      </ul>
-                      <div>
-                        <a href="#" class="btn btn-link btn-empty btn-lg">PURCHASE <i class="simple-icon-arrow-right"></i></a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-lg-4 mb-4 price-item">
-                <div class="card">
-                  <div class="card-body pt-5 pb-5 d-flex flex-lg-column flex-md-row flex-sm-row flex-column">
-                    <div class="price-top-part">
-                      <i class="iconsmind-MaleFemale large-icon"></i>
-                      <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">TEAM</h5>
-                      <p class="text-large mb-2 text-default">$17</p>
-                      <p class="text-muted text-small">User/Month Up to 10 Users</p>
-                    </div>
-                    <div class="pl-3 pr-3 pt-3 pb-0 d-flex price-feature-list flex-column">
-                      <ul class="list-unstyled">
-                        <li>
-                          <p class="mb-0 ">
-                            24/5 support
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Number of end products 1
-                          </p>
-                        </li>
-
-                        <li>
-                          <p class="mb-0 ">
-                            Two factor authentication
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Free updates
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Forum support
-                          </p>
-                        </li>
-                      </ul>
-                      <div>
-                        <a href="#" class="btn btn-link btn-empty btn-lg">PURCHASE <i class="simple-icon-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-lg-4 mb-4 price-item">
-                <div class="card">
-                  <div class="card-body pt-5 pb-5 d-flex flex-lg-column flex-md-row flex-sm-row flex-column">
-                    <div class="price-top-part">
-                      <i class="iconsmind-Mens large-icon"></i>
-                      <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">ENTERPRISE</h5>
-                      <p class="text-large mb-2 text-default">$19</p>
-                      <p class="text-muted text-small">User/Month 10+ Users</p>
-                    </div>
-                    <div class="pl-3 pr-3 pt-3 pb-0 flex-grow-1 d-flex price-feature-list flex-column">
-                      <ul class="list-unstyled">
-                        <li>
-                          <p class="mb-0 ">
-                            24/7 support
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Number of end products 1
-                          </p>
-                        </li>
-
-                        <li>
-                          <p class="mb-0 ">
-                            Two factor authentication
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Free updates
-                          </p>
-                        </li>
-                        <li>
-                          <p class="mb-0 ">
-                            Forum support
-                          </p>
-                        </li>
-                      </ul>
-
-                      <div>
-                        <a href="#" class="btn btn-link btn-empty btn-lg">PURCHASE <i class="simple-icon-arrow-right"></i></a>
-                      </div>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+            
           </div>
         </div>
 
 
-
-        <div class="section background background-no-bottom mb-0">
-          <div class="container" id="blog">
-            <div class="row">
-              <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
-                <h1>Latest from Blog</h1>
-                <p>
-                  Humanitarian resist incubator movements outcomes.
-                  Low-hanging fruit synergy correlation accessibility; save
-                  the world unprecedented challenge scalable. Leverage
-                  strategy, and, game-changer, agile, social return on
-                  investment.
-                </p>
-              </div>
-            </div>
-
-            <div class="row mt-5">
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card flex-row mb-5 listing-card-container">
-                  <div class="w-40 position-relative">
-                    <a href="LandingPage.Blog.Image.html">
-                      <img class="card-img-left" src="{{asset('build/assets/imagenes/landing-page/blog-thumb-1.jpg')}}" alt="Card image cap">
-                      <span class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                    </a>
-                  </div>
-                  <div class="w-60 d-flex align-items-center">
-                    <div class="card-body">
-                      <a href="LandingPage.Blog.Image.html">
-                        <h3 class="mb-4 listing-heading ellipsis">Progressively Maintain
-                        Extensive Infomediaries</h3>
-                      </a>
-                      <p class="listing-desc ellipsis">
-                        Credibly reintermediate backend ideas for cross-platform models.
-                        Continually reintermediate integrated processes through technically
-                        sound intellectual capital.
-                      </p>
-                      <footer>
-                        <p class="text-muted text-small mb-0 font-weight-light">27.12.2018</p>
-                      </footer>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card flex-row mb-5 listing-card-container">
-                  <div class="w-40 position-relative">
-                    <a href="LandingPage.Blog.Video.html" class="video-play-icon">
-                      <span></span>
-                    </a>
-                    <img class="card-img-left" src="{{asset('build/assets/imagenes/landing-page/blog-thumb-2.jpg')}}" alt="Card image cap">
-                  </div>
-                  <div class="w-60 d-flex align-items-center">
-                    <div class="card-body">
-                      <a href="LandingPage.Blog.Video.html">
-                        <h3 class="mb-4 listing-heading ellipsis">Assertively Iterate Resource
-                        Maximizing</h3>
-                      </a>
-                      <p class="listing-desc ellipsis">
-                        Keeping your eye on the ball while performing a deep dive on the
-                        start-up mentality to derive convergence on cross-platform integration.
-                      </p>
-                      <footer>
-                        <p class="text-muted text-small mb-0 font-weight-light">04.12.2018</p>
-                      </footer>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card flex-row mb-5 listing-card-container">
-                  <div class="w-40 position-relative">
-                    <a href="LandingPage.Blog.Image.html">
-                      <img class="card-img-left" src="{{asset('build/assets/imagenes/landing-page/blog-thumb-3.jpg')}}" alt="Card image cap">
-                    </a>
-                  </div>
-                  <div class="w-60 d-flex align-items-center">
-                    <div class="card-body">
-                      <a href="LandingPage.Blog.Image.html">
-                        <h3 class="mb-4 listing-heading ellipsis">Podcasting Operational Change
-                        Management Inside of Workflows</h3>
-                      </a>
-                      <p class="listing-desc ellipsis">
-                        uickly deploy strategic networks with compelling e-business. Credibly
-                        pontificate highly efficient manufactured products and enabled data.
-                      </p>
-                      <footer>
-                        <p class="text-muted text-small mb-0 font-weight-light">27.12.2018</p>
-                      </footer>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card flex-row mb-5 listing-card-container">
-                  <div class="w-40 position-relative">
-                    <a href="LandingPage.Blog.Image.html">
-                      <img class="card-img-left" src="{{asset('build/assets/imagenes/landing-page/blog-thumb-4.jpg')}}" alt="Card image cap">
-                    </a>
-                  </div>
-                  <div class="w-60 d-flex align-items-center">
-                    <div class="card-body">
-                      <a href="LandingPage.Blog.Image.html">
-                        <h3 class="mb-4 listing-heading ellipsis">Objectively Innovate
-                        Empowered Manufactured Products</h3>
-                      </a>
-                      <p class="listing-desc ellipsis">
-                        Completely synergize resource taxing relationships via premier niche
-                      markets. </p>
-                      <footer>
-                        <p class="text-muted text-small mb-0 font-weight-light">04.12.2018</p>
-                      </footer>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="section footer mb-0">
+        <div class="container-fluid estilos_footer">
           <div class="container">
-            <div class="row footer-row">
-              <div class="col-12 text-right">
-                <a class="btn btn-circle btn-outline-semi-light footer-circle-button scrollTo" href="#home" id="footerCircleButton">
-                  <i class="simple-icon-arrow-up"></i>
-                </a>
-              </div>
-              <div class="col-12 text-center footer-content">
-                <a href="#home" class="scrollTo">
-                  <img class="footer-logo" alt="footer logo" src="{{asset('build/assets/imagenes/landing-page/logo-footer.svg')}}" />
-                </a>
-              </div>
-            </div>
-            <div class="row" id="footerMenuAccordion">
-              <div class="col-12 col-xs-6 col-sm-3 offset-0 col-lg-2 offset-lg-2 footer-menu mb-5">
-                <div class="d-flex flex-column align-items-center">
-                  <a href="#" class="d-inline-block d-xs-none collapse-button mb-1" data-toggle="collapse" data-target="#menuGroup1"
-                  aria-expanded="true">COMPANY <i class="simple-icon-arrow-down"></i></a>
-                  <ul class="list-unstyled footer-menu collapse d-xs-block mb-0" id="menuGroup1" data-parent="#footerMenuAccordion">
-                    <li class="d-none d-xs-inline-block">
-                      <p>COMPANY</p>
-                    </li>
-                    <li><a href="LandingPage.About.html">About</a></li>
-                    <li><a href="LandingPage.Blog.html">Blog</a></li>
-                    <li><a href="LandingPage.Careers.html">Careers</a></li>
-                    <li><a href="LandingPage.Contact.html">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-12 col-xs-6 col-sm-3 col-lg-2 footer-menu mb-5">
-                <div class="d-flex flex-column align-items-center">
-                  <a href="#" class="d-inline-block d-xs-none collapse-button mb-1" data-toggle="collapse" data-target="#menuGroup2"
-                  aria-expanded="true">PRODUCT <i class="simple-icon-arrow-down"></i></a>
-                  <ul class="list-unstyled footer-menu collapse d-xs-block  mb-0" id="menuGroup2" data-parent="#footerMenuAccordion">
-                    <li class="d-none d-xs-inline-block">
-                      <p>PRODUCT</p>
-                    </li>
-                    <li><a href="LandingPage.Features.html">Features</a></li>
-                    <li><a href="LandingPage.Prices.html">Pricing</a></li>
-                    <li><a href="LandingPage.Docs.html">Api</a></li>
-                    <li><a href="LandingPage.Docs.html">Enterprise</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-12 col-xs-6 col-sm-3 col-lg-2 footer-menu mb-5">
-                <div class="d-flex flex-column align-items-center">
-                  <a href="#" class="d-inline-block d-xs-none collapse-button mb-1" data-toggle="collapse" data-target="#menuGroup3"
-                  aria-expanded="true">LEARNING <i class="simple-icon-arrow-down"></i></a>
-                  <ul class="list-unstyled footer-menu collapse d-xs-block mb-0" id="menuGroup3" data-parent="#footerMenuAccordion">
-                    <li class="d-none d-xs-inline-block">
-                      <p>LEARNING</p>
-                    </li>
-                    <li><a href="LandingPage.Contact.html">Help</a></li>
-                    <li><a href="LandingPage.Docs.Detail.html">Quick Start</a></li>
-                    <li><a href="LandingPage.Docs.html">Docs</a></li>
-                    <li><a href="LandingPage.Videos.html">Videos</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-12 col-xs-6 col-sm-3 col-lg-2 footer-menu mb-5">
-                <div class="d-flex flex-column align-items-center">
-                  <a href="#" class="d-inline-block d-xs-none collapse-button mb-1" data-toggle="collapse" data-target="#menuGroup4"
-                  aria-expanded="true">LEGAL <i class="simple-icon-arrow-down"></i></a>
-                  <ul class="list-unstyled footer-menu collapse d-xs-block mb-0" id="menuGroup4" data-parent="#footerMenuAccordion">
-                    <li class="d-none d-xs-inline-block">
-                      <p>LEGAL</p>
-                    </li>
-                    <li><a href="LandingPage.Content.html">Security</a></li>
-                    <li><a href="LandingPage.Content.html">Privacy</a></li>
-                    <li><a href="LandingPage.Content.html">Cookies</a></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="separator mt-5"></div>
-
-          <div class="container copyright pt-5 pb-5">
             <div class="row">
-              <div class="col-12"></div>
-              <div class="col-6">
-                <p class="mb-0">2018 © ColoredStrategies</p>
+              <div class="col-4">
+                <p class="mb-0">2018 TODOS LOS DERECHOS RESERVADOS © -TRIA</p>
               </div>
-              <div class="col-6 text-right social-icons">
+              <div class="col-md-4 text-center">
+                <p class="arvin-copyright-info"><a href="/politicas">Términos y Condiciones</a></p>
+              </div>
+              <div class="col-4 text-right social-icons">
                 <ul class="list-unstyled list-inline">
                   <li class="list-inline-item">
                     <a href="#"><i class="simple-icon-social-facebook"></i></a>
@@ -848,20 +324,23 @@
                   <li class="list-inline-item">
                     <a href="#"><i class="simple-icon-social-instagram"></i></a>
                   </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="simple-icon-social-google"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-
         </div>
+
 
       </div>
     </div>
   </div>
 </body>
 </html>
-
-
+{!!Html::script('home/js/custom.js')!!}
+{!!Html::script('build/assets/js_new/vendor/jquery-3.3.1.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/jquery-3.3.1.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/bootstrap.bundle.min.js')!!}
 {!!Html::script('build/assets/js_new/vendor/owl.carousel.min.js')!!}

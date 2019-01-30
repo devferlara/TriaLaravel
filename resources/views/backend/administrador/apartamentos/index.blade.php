@@ -164,3 +164,13 @@
 </div>
 
 @stop
+
+
+@section('footer')
+@include('layout.footer')
+
+{!!Html::script('build/assets/js/init.js')!!}
+{!!Html::script('build/assets/js/datatables.js')!!}
+{!!Html::script('build/assets/js/script/busqueda.js')!!}
+@stop
+

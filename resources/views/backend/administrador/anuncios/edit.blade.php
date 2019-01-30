@@ -85,7 +85,7 @@
             </div>
 
             <div class="col-md-12" style="margin-top:10px;">
-              {!!Form::textarea ('descripcion', null, ['id'=>'ckEditorClassic', 'class'=>'ckeditor' ,'rows'=>'10' , 'cols'=>'80'])!!}
+              {!!Form::textarea ('descripcion', null, ['id'=>'descripcion', 'class'=>'ckeditor' ,'rows'=>'10' , 'cols'=>'80'])!!}
             </div>
           </div>
           <div class="col-md-6 form-group" style="margin-top:20px;">
@@ -116,4 +116,20 @@
 
 @section ('footer')
 @include('layout.footer')
+{!!Html::script('vendor/ckeditor/ckeditor.js')!!}
+<script>
+  $("select").multipleSelect({
+    width: '100%',
+    filter: true
+  });
+
+  CKEDITOR.replace('descripcion');
+
+  CKEDITOR.replace( 'descripcion', {
+    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
+  });
+</script>
 @stop

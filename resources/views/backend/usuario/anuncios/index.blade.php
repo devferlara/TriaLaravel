@@ -91,5 +91,6 @@
 
 @section('footer')
 @include ('layout.footer')
+{!!Html::script('build/pages/js/pages.social.min.js')!!}
 @stop
 

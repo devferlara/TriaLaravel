@@ -120,16 +120,8 @@
 
 @section ('footer')
 @include('layout.footer')
-@stop
-
-@section('js_library')
-
-@stop
-
-@section('specific_js')
 {!!Html::script('build/assets/js/script/busqueda.js')!!}
 @stop
-
 
 
 <script>

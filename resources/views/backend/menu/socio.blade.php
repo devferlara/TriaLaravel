@@ -10,6 +10,12 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="/mensajes">
+                        <i class="simple-icon-envelope-open"></i> Mensaje
+                    </a>
+                </li>
+
 
                 <li class="active">
                     <a href="/logout">

@@ -154,14 +154,7 @@
 
 @section ('footer')
 @include('layout.footer')
-@stop
-
-
-@section('js_library')
 {!!Html::script('vendor/ckeditor/ckeditor.js')!!}
-@stop
-
-@section('specific_js')
 <script>
 
   CKEDITOR.replace('descripcion');
@@ -173,5 +166,4 @@
     filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
   });
 </script>
-
 @stop

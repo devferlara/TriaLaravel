@@ -16,33 +16,18 @@
 
 @section ('content')
 
-<div class="page-content-wrapper">
-
-	<div class="content">
-
+<div class="container-fluid">
+	<div class="row">
 		@include ('errors.success')
-
 		@include ('errors.request')
-
-		@include ('errors.errors')			
-
-		<div class="col-md-1"></div>
-
-
-
-		<div class="panel-group col-md-10">
-
-			<div class="panel panel-info">
-
-				<div class="panel-heading">
-
+		@include ('errors.errors')
+		<div class="col-lg-12 col-md-12">
+			<div class="card mb-4">
+				<div class="card-body ">
 					<h3 class="p-b-5 text-primary" style="text-align:center;"><span class="semi-bold">Listo</span> ¡Se ha recibido su pago!</h3>
+					<h5 class="text-info">El sistema esta esperando la confirmación de su pago. </h5>
 
-				</br>
-
-				<h5 class="text-info">El sistema esta esperando la confirmación de su pago. </h5>
-				
-				<?php if ($datos['error'] == '') {?>
+					<?php if ($datos['error'] == '') {?>
 				<div class="col-md-12" style="margin-top: 20px;">
 					<div class="col-md-3"></div>
 					<div class="col-md-6">
@@ -119,39 +104,17 @@
 					?>
 
 				</div>
-
-
-
 			</div>
-
 		</div>
-
-		<div class="col-md-1"></div>
-
 	</div>
-
-	<div class="col-md-12">
-
-		<hr>
-
-	</div>
-
 </div>
+
 
 @endsection
 
 
-
 @section ('footer')
-
 @include ('layout.footer')
-
-@stop
-
-
-
-@section('specific_js')
-
 {!!Html::script('build/assets/js/script/listaraptos.js')!!}
-
 @stop
+

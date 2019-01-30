@@ -92,5 +92,7 @@
 @section('footer')
 @include ('layout.footer')
 {!!Html::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyD6tig7C2Lj9bG3BKOko3v06CC6X-QUnaA')!!}
+{!!Html::script('build/assets/js/script/admin.js')!!}
+{!!Html::script('build/assets/js/script/busqueda.js')!!}
 @stop
 

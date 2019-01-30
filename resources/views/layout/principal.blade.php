@@ -7,7 +7,6 @@
     <title>TRIA</title>
 
     
-
     @yield ('meta')
 
     <!-- FAVICON AND APPLE TOUCHSCREEN ICONS -->
@@ -295,11 +294,7 @@
 
 {!!Html::script('home/js/jquery-1.11.2.min.js')!!}
 
-<!-- BOOTSTRAP SCRIPTS -->
-
 {!!Html::script('home/js/bootstrap.min.js')!!}
-
-<!-- CUSTOM SCRIPTS & PLUGINS-->
 
 {!!Html::script('home/js/jquery.easing.1.3.js')!!}
 

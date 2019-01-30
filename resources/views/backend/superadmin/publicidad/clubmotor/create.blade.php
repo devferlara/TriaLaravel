@@ -1,22 +1,13 @@
 @extends('layout.mensajes')
 
-<!-- Create General Section Sidebar -->
 @section('sidebar')
-<!-- Include the menu -->
 @include('backend.menu.superadmin')
 @stop
 
-<!-- Create General Section Header -->
 @section('head')
-<!-- Include the profile header -->
 @include('layout.head')
-
 @stop
 
-@section('css')
-{!!Html::style('build/assets/plugins/multiple-select/multiple-select.css')!!}
-
-@stop
 
 @section('content')
 
@@ -134,7 +125,7 @@
                             </div>
                         </div>
                         <div class="col-md-12" style="margin-top:10px;">
-                            <textarea class="ckeditor" name="descripcion" id="ckEditorClassic" rows="10" cols="80"></textarea>
+                            <textarea class="ckeditor" name="descripcion" id="descripcion" rows="10" cols="80"></textarea>
                         </div>
                         <div class="col-md-6 form-group" style="margin-top:20px;">
                             {!!Form::label('enabled','Publicar', ['class'=>'form-label'])!!}
@@ -157,30 +148,21 @@
 
 @section ('footer')
 @include('layout.footer')
-@stop
-
-
-@section('js_library')
-{!!Html::script('build/assets/plugins/multiple-select/multiple-select.js')!!}
 {!!Html::script('vendor/ckeditor/ckeditor.js')!!}
-@stop
-
-@section('specific_js')
 <script>
- $("select").multipleSelect({
-    width: '100%',
-    filter: true,
-});
- $('select').multipleSelect('refresh');
+   $("select").multipleSelect({
+            width: '100%',
+            filter: true,
+        });
+   $('select').multipleSelect('refresh');
 
- CKEDITOR.replace('descripcion');
+    CKEDITOR.replace('descripcion');
 
- CKEDITOR.replace( 'descripcion', {
+    CKEDITOR.replace( 'descripcion', {
     filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
     filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
     filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
     filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
-});
+  });
 </script>
-
 @stop

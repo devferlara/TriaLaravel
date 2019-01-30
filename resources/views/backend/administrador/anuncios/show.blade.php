@@ -74,8 +74,9 @@
 
 
 @stop
-{!!Html::script('build/assets/js/script/anuncios.js')!!}
+
 @section('footer')
 @include ('layout.footer')
+{!!Html::script('build/assets/js/script/anuncios.js')!!}
 @stop
 

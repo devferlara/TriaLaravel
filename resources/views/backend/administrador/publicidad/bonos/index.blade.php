@@ -25,6 +25,9 @@
 @section('content')
 
 <div class="container-fluid">
+  @include ('errors.errors')
+  @include ('errors.success')
+  @include ('errors.request')
   <div class="row">
     <div class="col-12">
       <h1>Vista Administrador - Bonos de Descuento</h1>
@@ -121,4 +124,5 @@
 
 @section ('footer')
 @include('layout.footer')
+{!!Html::script('build/assets/js/script/busqueda.js')!!}
 @stop

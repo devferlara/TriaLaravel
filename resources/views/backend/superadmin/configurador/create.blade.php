@@ -30,13 +30,10 @@
 
 <div class="container-fluid">
 	<div class="row">
-
-
 		@include ('errors.success')
 		@include ('errors.request')
 		@include ('errors.errors')			
 
-		
 		<div class="col-md-12">
 
 			<div class="card mb-4">
@@ -49,7 +46,7 @@
 					{!!Form::open(['route'=>'superadmin.conceptos.store','method'=>'POST'])!!}
 					<div class="form-inline">
 						<div class="col-md-12" style="margin-top:10px;">
-							<textarea name="concepto" id="ckEditorClassic"></textarea>
+							<textarea class="ckeditor" name="concepto" id="descripcion" rows="10" cols="80"></textarea>
 						</div>
 					</div>
 					<br><br>
@@ -75,6 +72,25 @@
 
 @section ('footer')
 @include ('layout.footer')
+{!!Html::script('vendor/ckeditor/ckeditor.js')!!}
+<script>
+   $("select").multipleSelect({
+            width: '100%',
+            filter: true,
+        });
+   $('select').multipleSelect('refresh');
+
+    CKEDITOR.replace('descripcion');
+
+    CKEDITOR.replace( 'descripcion', {
+    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
+  });
+</script>
+{!!Html::script('build/assets/js/script/listaraptos.js')!!}
+{!!Html::script('build/assets/js/script/conceptos.js')!!}
 @stop
 
 

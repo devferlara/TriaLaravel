@@ -17,7 +17,7 @@
 @include('backend.menu.superadmin')
 
 @endif
-
+ 
 @endsection
 <!-- Create General Section Header -->
 @section('head')
@@ -180,12 +180,5 @@
 
 @section ('footer')
 @include ('layout.footer')
-
-@stop
-
-@section ('specific_js')
-
 {!!Html::script('build/assets/js/script/listarciudades.js?v=1')!!}
-
-
 @stop

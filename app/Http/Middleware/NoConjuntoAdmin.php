@@ -67,7 +67,7 @@ class NoConjuntoAdmin
 
                     //Enviar al pago
 
-                    Session::flash('message','Es necesario pagar su membresia.' . $pago[0]);
+                    Session::flash('message','Es necesario pagar su membresia.');
                     return redirect()->to('administrador/pagos/create');
                 }
 

@@ -1,64 +1,80 @@
-@extends('layout.admin')
-@section('meta')
-    <html lang="es">
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <meta charset="utf-8" />
-    <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>Tria Group Aplicativo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="Ingreso a plataforma de Administración MS Global" name="description"/>
-    <meta content="Administraciones MS Global" name="author"/>
-@endsection
-@section ('content')
-@include ('errors.errors')
-@include ('errors.request')
-@include ('errors.success')
 
-<div class="login-wrapper ">
-	<div class="bg-pic">
-        <!-- START Background Pic-->
-        <img src="{{ asset('build/assets/img/Login.jpg') }}" data-src="{{ asset('build/assets/img/Login.jpg') }}" data-src-retina="{{ asset('build/assets/img/Login.jpg')}}" alt="" class="lazy">
-        <!-- END Background Pic-->
-        <!-- START Background Caption-->
-        <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
-        
-        </div>
-        <!-- END Background Caption-->
-	</div>
-	<div class="login-container bg-white">
-		<div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-			<img src="{{ asset('home/images/LogoTria.png') }}" alt="logo" data-src="{{ asset('home/images/LogoTria.png') }}" data-src-retina="home/images/LogoTria.png') }}" class="logo-ico" style="width: 60%;">
-			<p class="p-t-35">Recuperar Contraseña</p>
-			<form method="POST" action="/password/reset">
-				{!! csrf_field() !!}
-				<input type="hidden" name="token" value="{{ $token }}">
-				<div class="form-group">
-					<label>Email</label>
-					<input type="email" name="email" class="form-control" placeholder="Ingresa tu email" value="{{ old('email') }}" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dore jQuery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{!!Html::style('build/assets/font/iconsmind/style.css')!!}
+	{!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
+	{!!Html::style('build/assets/css_new/vendor/bootstrap.min.css')!!}
+	{!!Html::style('build/assets/css_new/estilos.css')!!}
+	{!!Html::style('build/assets/css_new/vendor/bootstrap-float-label.min.css')!!}
+	{!!Html::style('build/assets/css_new/main.css')!!}
+
+</head>
+
+<body class="background show-spinner login_estilos_css">
+	<div class="fixed-background" style="background-image: url({{ asset('build/assets/img/login.jpg') }})"></div>
+
+	<main>
+		@include ('errors.errors')
+		@include ('errors.request')
+		@include ('errors.success')
+		<div class="container">
+			<div class="row h-100">
+				<div class="col-12 col-md-10 mx-auto my-auto padding_login_movil">
+					<div class="card auth-card ">
+						<div class="position-relative image-side " style="background-image: url({{ asset('build/assets/imagenes/login-balloon.jpg') }}">
+
+							<p class=" text-white h2">MAGIC IS IN THE DETAILS</p>
+
+							<p class="white mb-0">
+								Please use your credentials to login.
+								<br>If you are not a member, please
+								<a href="#" class="white">register</a>.
+							</p>
+						</div>
+						<div class="form-side ">
+							<img src="{{ asset('build/assets/img/logo_login.png') }}">
+							<h6 class="mb-4" style="font-weight: bold">Recuperar Contraseña</h6>
+							<form method="POST" action="/password/reset">
+								{!! csrf_field() !!}
+								<input type="hidden" name="token" value="{{ $token }}">
+								<div class="form-group">
+									<label>Email</label>
+									<input type="email" name="email" class="form-control" placeholder="Ingresa tu email" value="{{ old('email') }}" />
+								</div>
+								<div class="form-group">
+									<label>Contraseña</label>
+									<input type="password" name="password" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label>Confirmar Contraseña</label>
+									<input type="password" name="password_confirmation" class="form-control" />
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Recuperar</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<label>Contraseña</label>
-					<input type="password" name="password" class="form-control" />
-				</div>
-				<div class="form-group">
-					<label>Confirmar Contraseña</label>
-					<input type="password" name="password_confirmation" class="form-control" />
-				</div>
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">Recuperar</button>
-				</div>
-			</form>
+			</div>
 		</div>
-		
-	</div>
-			
-    
-</div>
-@stop
+	</main>
+	{!!Html::script('build/assets/js_new/vendor/jquery-3.3.1.min.js')!!}
+	{!!Html::script('build/assets/js_new/vendor/bootstrap.bundle.min.js')!!}
+	{!!Html::script('build/assets/js_new/dore.script.js')!!}
+	{!!Html::script('build/assets/js_new/scripts.js')!!}
+
+</body>
+
+</html>
+
+
+
+
+

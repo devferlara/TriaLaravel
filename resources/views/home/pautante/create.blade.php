@@ -1,162 +1,126 @@
-@extends ('layout.principal')
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dore jQuery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{!!Html::style('build/assets/font/iconsmind/style.css')!!}
+	{!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
+	{!!Html::style('build/assets/css_new/vendor/bootstrap.min.css')!!}
+	{!!Html::style('build/assets/css_new/estilos.css')!!}
+	{!!Html::style('build/assets/css_new/vendor/bootstrap-float-label.min.css')!!}
+	{!!Html::style('build/assets/css_new/vendor/bootstrap-datepicker3.min.css')!!}
+	{!!Html::style('build/assets/css_new/main.css')!!}
+
+</head>
+
+<body class="background show-spinner login_estilos_css">
+	<div class="fixed-background" style="background-image: url({{ asset('build/assets/img/login.jpg') }})"></div>
+
+	<main>
+		@include ('errors.errors')
+		@include ('errors.request')
+		@include ('errors.success')
+		<div class="container">
+			<div class="row h-100">
+				<div class="col-12 col-md-8 mx-auto my-auto padding_login_movil width_register">
+					<div class="card auth-card ">
+						
+						<div class="form-side ">
+							<div>
+								<img src="{{ asset('build/assets/img/logo_login.png') }}">
+								<h6 class="mb-4" style="font-weight: bold">Registro de Nuevo Pautante</h6>
+
+
+								{!!Form::open(['route'=>'pautanteStore','method'=>'POST'])!!}
+
+
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('identificacion', 'Identificacion')!!}
+									{!!Form::text ('identificacion', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa tu numero de identificacion'])!!}
+								</div>
+
+								<div class="form-group">
+									<div class="radio radio-success">
+										<input type="radio" checked="checked" value="Femenino" name="genero" id="femenino">
+										<label for="femenino">Femenino</label><br>
+										<input type="radio" value="Masculino" name="genero" id="masculino">
+										<label for="masculino">Masculino</label>
+									</div>
+								</div>
+
+
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('nombres', 'Nombres')!!}
+									{!!Form::text ('nombres', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
+								</div>
+
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('apellidos', 'Apellidos')!!}
+									{!!Form::text ('apellidos', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa sus Apellidos'])!!}
+								</div>
+
+								<div class="form-group has-float-label mb-4">
+									
+									{!!Form::label('fecha_nacimiento', 'Fecha de Nacimiento')!!}
+									{!!Form::date ('fecha_nacimiento', null, ['required'=>'required','class'=>'form-control'])!!}
+								</div>
+
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('email', 'Correo Electronico')!!}
+									{!!Form::email ('email', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'ejemplo@TriaGroup.com'])!!}
+								</div>
+
+								
 
 
 
-@section ('meta')
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('Clave')!!}
+									{!!Form::password ('password', ['required'=>'required','class'=>'form-control', 'placeholder'=>'Introduce una clave'])!!}
+								</div>
 
-    <meta charset="UTF-8">
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('Confirmar Clave')!!}
+									{!!Form::password ('password2', ['required'=>'required','class'=>'form-control', 'placeholder'=>'Confirma la clave'])!!}
+								</div>
 
-    <meta name="description" content="">
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('telefono', 'telefono')!!}
+									{!!Form::text ('telefono', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingrese su telefono de contacto'])!!}
+								</div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+								<div class="form-group has-float-label mb-4">
+									{!!Form::label('celular', 'Celular')!!}
+									{!!Form::text ('celular', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingrese su numero Celular'])!!}
+								</div>
 
-    <meta http-equiv-"X-UA-Compatible" content="IE=edge"/>
+								{!!Form::submit('Crear', ['class'=>'btn btn-primary'])!!}
 
-<style>
-.arvin-section-wrapper{
-	padding-top:130px !important;
-}
-.arvin-main-menu{
-
-	background:#4692c6 !important; 
-	color:white !important; 
-	margin-top:0px !important;
-
-}
-</style>
-@stop
-
-
-
-@section ('nav-bar')
-
-<nav class="navbar arvin-main-menu" role="navigation">
-
-
-
-@stop
-</nav>
-
-
-
-@section ('content')
-
-
-
-<div style="clear:both"></div>
-
-<section class="arvin-section-wrapper">
-<div class="col-md-6 col-md-offset-3" >
-@include ('errors.errors')
-@include ('errors.request')
-@include ('errors.success')
-<h1 style="text-align:center">Registro de Nuevo Pautante</h1>
- 
-           
-{!!Form::open(['route'=>'pautanteStore','method'=>'POST'])!!}
-
-
-						<div class="form-group">
-
-							{!!Form::label('identificacion', 'Identificacion', ['class'=>'form-control'])!!}
-
-							{!!Form::text ('identificacion', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa tu numero de identificacion'])!!}
-
+								<a href="{{ route('home1') }}" class="btn btn-danger">Cancelar</a>
+							</div>
+							{!!Form::close()!!}
+							<br>
+							{!!link_to('/login', $title = 'Volver al Login', $attributes = null, $secure = null)!!}
 						</div>
-
-						<div class="form-group">
-
-							<div class="radio radio-success">
-
-                            <input type="radio" checked="checked" value="Femenino" name="genero" id="femenino">
-
-                            <label for="femenino">Femenino</label><br>
-
-                            <input type="radio" value="Masculino" name="genero" id="masculino">
-
-                            <label for="masculino">Masculino</label>
-
-                        	</div>
-
-						</div>
-
-
-					<div class="form-group">
-
-						{!!Form::label('nombres', 'Nombres', ['class'=>'form-control'])!!}
-
-						{!!Form::text ('nombres', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
-
 					</div>
 
-					<div class="form-group">
+				</div>
+			</div>
+		</div>
+	</div>
 
-						{!!Form::label('apellidos', 'Apellidos', ['class'=>'form-control'])!!}
+</main>
+{!!Html::script('build/assets/js_new/vendor/jquery-3.3.1.min.js')!!}
+{!!Html::script('build/assets/js_new/vendor/bootstrap.bundle.min.js')!!}
+{!!Html::script('build/assets/js_new/dore.script.js')!!}
+{!!Html::script('build/assets/js_new/vendor/bootstrap-datepicker.js')!!}
+{!!Html::script('build/assets/js_new/scripts.js')!!}
 
-						{!!Form::text ('apellidos', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa sus Apellidos'])!!}
+</body>
 
-					</div>
+</html>
 
-					<div class="form-inline">
-
-						<div class="form-group">
-
-							{!!Form::label('fecha_nacimiento', 'Fecha de Nacimiento', ['class'=>'form-control'])!!}
-
-							{!!Form::date ('fecha_nacimiento', null, ['required'=>'required','class'=>'form-control'])!!}
-
-						</div>
-
-						<div class="form-group">
-
-							{!!Form::label('email', 'Correo Electronico', ['class'=>'form-control'])!!}
-
-							{!!Form::email ('email', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'ejemplo@TriaGroup.com'])!!}
-
-						</div>
-
-					</div>	
-
-
-
-					<div class="form-group">
-
-						{!!Form::label('Clave')!!}
-
-						{!!Form::password ('password', ['required'=>'required','class'=>'form-control', 'placeholder'=>'Introduce una clave'])!!}
-
-					</div>
-
-					<div class="form-group">
-
-						{!!Form::label('Confirmar Clave')!!}
-
-						{!!Form::password ('password2', ['required'=>'required','class'=>'form-control', 'placeholder'=>'Confirma la clave'])!!}
-
-					</div>
-
-					<div class="form-group">
-
-						{!!Form::label('telefono', 'telefono', ['class'=>'form-control'])!!}
-
-						{!!Form::text ('telefono', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingrese su telefono de contacto'])!!}
-
-					</div>
-
-					<div class="form-group">
-
-						{!!Form::label('celular', 'Celular', ['class'=>'form-control'])!!}
-
-						{!!Form::text ('celular', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingrese su numero Celular'])!!}
-
-					</div>
-
-						{!!Form::submit('Crear', ['class'=>'btn btn-primary'])!!}
-
-						<a href="{{ route('home1') }}" class="btn btn-danger">Cancelar</a>
-</div>
-					{!!Form::close()!!}
- </div>
-<div style="clear:both"></div>
-</section>
-@stop

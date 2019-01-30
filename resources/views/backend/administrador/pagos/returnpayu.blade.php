@@ -15,7 +15,7 @@
 @endsection
 
 @section ('content')
-
+ 
 <div class="container-fluid">
 	<div class="row">
 		@include ('errors.success')
@@ -110,13 +110,7 @@
 @section ('footer')
 
 @include ('layout.footer')
-
-@stop
-
-
-
-@section('specific_js')
-
 {!!Html::script('build/assets/js/script/listaraptos.js')!!}
 
 @stop
+
