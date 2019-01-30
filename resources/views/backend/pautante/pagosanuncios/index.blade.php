@@ -191,20 +191,3 @@
 @include ('layout.footer')
 @stop
 
-
-@section('js_library')
-
-{!!Html::script('build/assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js')!!}
-{!!Html::script('build/assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js')!!}
-{!!Html::script('build/assets/plugins/datatables-responsive/js/datatables.responsive.js')!!}
-{!!Html::script('build/assets/plugins/datatables-responsive/js/lodash.min.js')!!}
-@stop
-
-@section('specific_js')
-
-{!!Html::script('build/assets/js/init.js')!!}
-{!!Html::script('build/assets/js/datatables.js')!!}
-{!!Html::script('build/assets/js/script/pagos.js')!!}
-
-@stop

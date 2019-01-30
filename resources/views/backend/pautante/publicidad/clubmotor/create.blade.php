@@ -106,7 +106,7 @@
             </div>
 
             <div class="col-md-12" style="margin-top:10px;">
-              <textarea class="ckeditor" name="descripcion" id="ckEditorClassic" rows="10" cols="80"></textarea>
+              <textarea class="ckeditor" name="descripcion" id="descripcion" rows="10" cols="80"></textarea>
             </div>
           </div>
           <div class="col-md-6 form-group" style="margin-top:20px;">
@@ -134,15 +134,7 @@
 
 @section ('footer')
 @include('layout.footer')
-@stop
-
-
-@section('js_library')
-{!!Html::script('build/assets/plugins/multiple-select/multiple-select.js')!!}
 {!!Html::script('vendor/ckeditor/ckeditor.js')!!}
-@stop
-
-@section('specific_js')
 <script>
  $("select").multipleSelect({
   width: '100%',
@@ -157,7 +149,6 @@
  $('select').multipleSelect('refresh');
 
 
-
  CKEDITOR.replace('descripcion');
 
  CKEDITOR.replace( 'descripcion', {
@@ -167,10 +158,6 @@
   filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
 });
 
-
 </script>
-
 {!!Html::script('build/assets/js/script/contarvisitantes.js?v=1')!!}
-
-
 @stop
