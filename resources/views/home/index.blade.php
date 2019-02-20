@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Home</title>
+  <title>HGV - Home</title>
   <link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {!!Html::style('build/assets/font/iconsmind/style.css')!!}
