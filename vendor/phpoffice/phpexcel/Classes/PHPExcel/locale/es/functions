@@ -1,6 +1,7 @@
 ##
 ## PHPExcel
-##
+##
+
 ## Copyright (c) 2006 - 2013 PHPExcel
 ##
 ## This library is free software; you can redistribute it and/or
@@ -241,7 +242,7 @@ MATCH			= COINCIDIR				##	Busca valores de una referencia o matriz.
 OFFSET			= DESREF				##	Devuelve un desplazamiento de referencia respecto a una referencia dada.
 ROW			= FILA					##	Devuelve el número de fila de una referencia.
 ROWS			= FILAS					##	Devuelve el número de filas de una referencia.
-RTD			= RDTR					##	Recupera datos en tiempo real desde un programa compatible con la automatización COM (automatización: modo de trabajar con los objetos de una aplicación desde otra aplicación o herramienta de entorno. La automatización, antes denominada automatización OLE, es un estándar de la industria y una función del Modelo de objetos componentes (COM).).
+RTD			= RDTR					##	Recupera datos en tiempo real desde un programa compatible con la automatización COM (automatización: modo de trabajar con los objetos de una aplicación desde otra aplicación o herramienta de entorno. La automatización, antes denominada automatización OLE, es un estándar de la indusHGVy una función del Modelo de objetos componentes (COM).).
 TRANSPOSE		= TRANSPONER				##	Devuelve la transposición de una matriz.
 VLOOKUP			= BUSCARV				##	Busca en la primera columna de una matriz y se mueve en horizontal por la fila para devolver el valor de una celda.
 

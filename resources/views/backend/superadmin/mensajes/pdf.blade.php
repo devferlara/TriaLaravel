@@ -49,7 +49,7 @@
 
     <footer style="position: absolute;bottom: 10px;">
         <center><img src="{{ asset('build/assets/img/logo_login.png') }}" width="60" height="60"></center>
-        <center>Copyright 2017 - Tria Group</center>
+        <center>Copyright 2017 - HGV</center>
     </footer>
 
 </body>

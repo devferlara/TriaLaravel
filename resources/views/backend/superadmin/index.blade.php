@@ -41,8 +41,8 @@
 
         <div class="col-6">
             <h6 style="font-weight: bold">BIENVENIDO(A) {{ Auth::user()->nombres }}</h6>
-            <h1>Plataforma TRIA</h1>
-            <p class="list-item-heading mb-4">Bienvenido! Desde esta sección podrás administrar todo el aplicativo TRIA, donde tendras disponible herramientas para crear conjuntos, usuarios, bonos, noticias y demás funcionalidades que tiene el aplicativo. Fácil y sin complicaciones podras acceder a información detallada para que tengas un control total!</p>
+            <h1>Plataforma HGV</h1>
+            <p class="list-item-heading mb-4">Bienvenido! Desde esta sección podrás administrar todo el aplicativo HGV, donde tendras disponible herramientas para crear conjuntos, usuarios, bonos, noticias y demás funcionalidades que tiene el aplicativo. Fácil y sin complicaciones podras acceder a información detallada para que tengas un control total!</p>
         </div>
 
 

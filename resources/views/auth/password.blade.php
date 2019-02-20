@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Dore jQuery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
 	{!!Html::style('build/assets/font/iconsmind/style.css')!!}
 	{!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
 	{!!Html::style('build/assets/css_new/vendor/bootstrap.min.css')!!}

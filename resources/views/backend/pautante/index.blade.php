@@ -39,7 +39,7 @@
 
     <div class="col-6">
       <h6 style="font-weight: bold">BIENVENIDO(A) {{ Auth::user()->nombres }}</h6>
-      <h1>Plataforma Tria Group</h1>
+      <h1>Plataforma Hgv</h1>
       <p class="list-item-heading mb-4">Bienvenido! Aqui la descripción de lo que puede hacer el pautante</p>
     </div>
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TRIA- Propiedad Horizontal</title>
+    <title>HGV- Propiedad Horizontal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
     @yield('meta')
     {!!Html::style('build/assets/font/iconsmind/style.css')!!}
     {!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}

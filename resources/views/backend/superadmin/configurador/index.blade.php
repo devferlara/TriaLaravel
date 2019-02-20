@@ -42,7 +42,7 @@
         <div class="card-body ">
           <div class="row">
             <div class="col-md-6 ">
-              <h3>Listado de Conceptos Publicitarios Tria Group</h3>
+              <h3>Listado de Conceptos Publicitarios HGV</h3>
             </div>
 
             <div class="col-md-6 text-right">

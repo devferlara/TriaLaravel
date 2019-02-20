@@ -211,7 +211,7 @@ MATCH			= CORRESP			##	Procura valores numa referência ou numa matriz
 OFFSET			= DESLOCAMENTO			##	Devolve o deslocamento de referência de uma determinada referência
 ROW			= LIN				##	Devolve o número da linha de uma referência
 ROWS			= LINS				##	Devolve o número de linhas numa referência
-RTD			= RTD				##	Obtém dados em tempo real a partir de um programa que suporte automatização COM (automatização: modo de trabalhar com objectos de uma aplicação a partir de outra aplicação ou ferramenta de desenvolvimento. Anteriormente conhecida como automatização OLE, a automatização é uma norma da indústria de software e uma funcionalidade COM (Component Object Model).)
+RTD			= RTD				##	Obtém dados em tempo real a partir de um programa que suporte automatização COM (automatização: modo de trabalhar com objectos de uma aplicação a partir de outra aplicação ou ferramenta de desenvolvimento. Anteriormente conhecida como automatização OLE, a automatização é uma norma da indúsHGVde software e uma funcionalidade COM (Component Object Model).)
 TRANSPOSE		= TRANSPOR			##	Devolve a transposição de uma matriz
 VLOOKUP			= PROCV				##	Procura na primeira coluna de uma matriz e percorre a linha para devolver o valor de uma célula
 

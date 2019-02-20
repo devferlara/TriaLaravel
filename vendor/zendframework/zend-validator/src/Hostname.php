@@ -1628,7 +1628,7 @@ class Hostname extends AbstractValidator
      * (.AC) Ascension Island http://www.nic.ac/pdf/AC-IDN-Policy.pdf
      * (.AR) Argentina http://www.nic.ar/faqidn.html
      * (.AS) American Samoa http://www.nic.as/idn/chars.cfm
-     * (.AT) Austria http://www.nic.at/en/service/technical_information/idn/charset_converter/
+     * (.AT) AusHGVhttp://www.nic.at/en/service/technical_information/idn/charset_converter/
      * (.BIZ) International http://www.iana.org/domains/idn-tables/
      * (.BR) Brazil http://registro.br/faq/faq6.html
      * (.BV) Bouvett Island http://www.norid.no/domeneregistrering/idn/idn_nyetegn.en.html

@@ -4,14 +4,14 @@
 
 <head>
 
-    <title>TRIA</title>
-
+    <title>HGV</title>
+    
     
     @yield ('meta')
 
     <!-- FAVICON AND APPLE TOUCHSCREEN ICONS -->
 
-    <link rel="shortcut icon" href="{{ asset('home/css/normalize.css') }}images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
 
     <link rel="apple-touch-icon" href="{{ asset('home/css/normalize.css') }}images/apple-touch-icon.png">
 
@@ -139,7 +139,7 @@
 
                     <li>
 
-                        <a href="/#quienesomos">Tria App</a>
+                        <a href="/#quienesomos">HGVApp</a>
 
                     </li>
 

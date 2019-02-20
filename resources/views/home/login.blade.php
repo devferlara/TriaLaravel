@@ -28,14 +28,14 @@
                 <div class="col-12 col-md-10 mx-auto my-auto padding_login_movil">
                     <div class="card auth-card ">
                         <div class="position-relative image-side " style="background-image: url({{ asset('build/assets/imagenes/login-balloon.jpg') }}">
-
+                            <!--
                             <p class=" text-white h2">MAGIC IS IN THE DETAILS</p>
 
                             <p class="white mb-0">
                                 Please use your credentials to login.
                                 <br>If you are not a member, please
                                 <a href="#" class="white">register</a>.
-                            </p>
+                            </p>-->
                         </div>
                         <div class="form-side ">
                             <img src="{{ asset('build/assets/img/logo_login.png') }}">

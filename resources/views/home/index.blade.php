@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Home</title>
-  <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {!!Html::style('build/assets/font/iconsmind/style.css')!!}
   {!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
@@ -29,7 +29,7 @@
       </a>
       <ul class="navbar-nav">
         <li class="nav-item"><a href="#home" class="scrollTo">INICIO</a></li>
-        <li class="nav-item"><a href="#tria_app" class="scrollTo">TRIA APP</a></li>
+        <li class="nav-item"><a href="#tria_app" class="scrollTo">HGV APP</a></li>
         <li class="nav-item"><a href="#funcionalidades" class="scrollTo">FUNCIONALIDADES</a></li>
         <li class="nav-item"><a href="#franquicias" class="scrollTo">FRANQUICIAS</a></li>
         @if(Auth::check())
@@ -50,7 +50,7 @@
           </a>
           <ul class="navbar-nav d-none d-lg-flex flex-row">
             <li class="nav-item"><a href="#home" class="scrollTo">INICIO</a></li>
-            <li class="nav-item"><a href="#tria_app" class="scrollTo">TRIA APP</a></li>
+            <li class="nav-item"><a href="#tria_app" class="scrollTo">HGV APP</a></li>
             <li class="nav-item"><a href="#funcionalidades" class="scrollTo">FUNCIONALIDADES</a></li>
             <li class="nav-item"><a href="#contactenos" class="scrollTo">CONTACTENOS</a></li>
             <li class="nav-item"><a href="#franquicias" class="scrollTo">FRANQUICIAS</a></li>
@@ -81,7 +81,7 @@
 
               <div class="col-12 col-xl-4 col-lg-5 col-md-6">
                 <div class="home-text">
-                  <div class="display-1">TRIA<br>GROUP</div>
+                  <div class="display-1">HGV</div>
                   <p class="white mb-5">Es una aplicaci&oacute;n m&oacute;vil Multi-plataforma, app y web a nivel mundial dirigida a la Propiedad Horizontal <br />
                     <br />
                     Conjuntos Residenciales , Condominios , Edificios Corporativos y centros comerciales.<br />
@@ -100,10 +100,10 @@
             <div class="row" id="funcionalidades">
               <div class="col-12 offset-0 col-lg-8 offset-lg-2 text-center">
                 <h1 style="color: #fff">FUNCIONALIDADES</h1>
-                <p style="color: #fff">¿ Que propiedades pueden hacer parte de TRIA APP ? <br>
+                <p style="color: #fff">¿ Que propiedades pueden hacer parte de HGV APP ? <br>
                   Conjuntos residenciales o condominios, edificios corporativos , centros comerciales , centros industriales e inmobiliarias.<br>
-                  con TRIA APP el administrador de la propiedad puede tener comunicación en tiempo real y en simultaneo con el propietario y arrendatario de la propiedad o inmobiliaria. <br>
-                  TRIA APP es multi -plataforma el usuario puede operar desde la web, tablet o móvil. la distribución de la información va hacer mas efectiva y rapída, evitando el uso del papel.<br><br><br>
+                  con HGV APP el administrador de la propiedad puede tener comunicación en tiempo real y en simultaneo con el propietario y arrendatario de la propiedad o inmobiliaria. <br>
+                  HGV APP es multi -plataforma el usuario puede operar desde la web, tablet o móvil. la distribución de la información va hacer mas efectiva y rapída, evitando el uso del papel.<br><br><br>
                 </p>
               </div>
             </div>
@@ -213,7 +213,7 @@
                   </div>
                   <div class="feature-text-container text-center">
                     <h1>FRANQUICIAS</h1>
-                    <p>Adquiere la franquicia de TRIA y ejecuta un negocio del 200 % de ganancia a 12 meses, podrás abrir mercado con las propiedades y mantenerlas por periodos renovables de 1 año. para mayor información escribe a triainternacional@gmail.com. o al whatsapp 57- 3173719404.
+                    <p>Adquiere la franquicia de HGVy ejecuta un negocio del 200 % de ganancia a 12 meses, podrás abrir mercado con las propiedades y mantenerlas por periodos renovables de 1 año. para mayor información escribe a hgvinternacional@gmail.com. o al whatsapp 57- 3173719404.
                     </p>
                   </div>
                 </div>
@@ -244,10 +244,10 @@
                     <i class="iconsmind-Checked-User"> Jorge Andrés González</i>
                   </li>
                   <li>
-                    <i class="iconsmind-Envelope"> triainternacional@gmail.com</i>
+                    <i class="iconsmind-Envelope"> hgvinternacional@gmail.com</i>
                   </li>
                   <li>
-                    <i class="iconsmind-Globe"> www.triagroup.co</i>
+                    <i class="iconsmind-Globe"> www.hgv.co</i>
                   </li>
                 </ul>
               </div>
@@ -291,8 +291,8 @@
                     </div>
                   </div>
                   <div class="feature-text-container ">
-                    <h1 style="text-align: center;display: block">TRIA APP</h1>
-                    <p>Tria APP, es una plataforma que permite que los residentes de las propiedades en general tengan una aplicación móvil, en donde el administrador de la propiedad puede comunicar su gestión a los móviles de los residentes en tiempo real. Optimizando la comunicación y haciéndola mas efectiva. Con presencia en seis (6) países ( Argentina, Alemania, Bolivia, Colombia, Mexico e Italia). TRIA se proyecta hacer la herramienta mas efectiva en el mundo para la gestión dentro de la propiedad horizontal.<br> El uso de las aplicaciones móviles en el mundo esta revolucionando la comunicación a nivel global permitiendo una interacción directa con el teléfono móvil del usuario. Es el momento de hacer parte del cambio y que su propiedad ingrese a la era de la información.
+                    <h1 style="text-align: center;display: block">HGV APP</h1>
+                    <p>HGV APP, es una plataforma que permite que los residentes de las propiedades en general tengan una aplicación móvil, en donde el administrador de la propiedad puede comunicar su gestión a los móviles de los residentes en tiempo real. Optimizando la comunicación y haciéndola mas efectiva. Con presencia en seis (6) países ( Argentina, Alemania, Bolivia, Colombia, Mexico e Italia). HGVse proyecta hacer la herramienta mas efectiva en el mundo para la gestión dentro de la propiedad horizontal.<br> El uso de las aplicaciones móviles en el mundo esta revolucionando la comunicación a nivel global permitiendo una interacción directa con el teléfono móvil del usuario. Es el momento de hacer parte del cambio y que su propiedad ingrese a la era de la información.
                     </p>
                   </div>
                 </div>
@@ -308,7 +308,7 @@
           <div class="container">
             <div class="row">
               <div class="col-4">
-                <p class="mb-0">2018 TODOS LOS DERECHOS RESERVADOS © -TRIA</p>
+                <p class="mb-0">2018 TODOS LOS DERECHOS RESERVADOS © -HGV</p>
               </div>
               <div class="col-md-4 text-center">
                 <p class="arvin-copyright-info"><a href="/politicas">Términos y Condiciones</a></p>

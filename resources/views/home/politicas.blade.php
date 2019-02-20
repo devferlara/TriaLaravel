@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Home</title>
-
+  <link rel="shortcut icon" type="image/png" href="{{asset('build/assets/img/logo_login.png')}}"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {!!Html::style('build/assets/font/iconsmind/style.css')!!}
   {!!Html::style('build/assets/font/simple-line-icons/css/simple-line-icons.css')!!}
@@ -78,15 +78,15 @@
                     </div>
                   </div>
                   <div class="feature-text-container ">
-                    <h1 style="text-align: center;display: block">TRIA</h1>
+                    <h1 style="text-align: center;display: block">HGV</h1>
                     <h2 class="title-p">SEGURIDAD EN LA INFORMACIÓN</h2>
                     <p class="col-md-12 politicas-p">
-                      Todos los derechos reservados, TRIA 2018. Prohibida su
+                      Todos los derechos reservados, HGV 2018. Prohibida su
                       reproducción total o parcial, así como su traducción a cualquier idioma sin autorización
-                      escrita del titular. Los servicios que presta TRIA están regulados
+                      escrita del titular. Los servicios que presta HGV están regulados
                       por las Leyes vigentes de Protección al usuario, protección al consumidor y las
-                      establecidas por la Superintendencia de Industria y Comercio.
-                      La Empresa TRIA garantiza el cumplimiento legal establecido
+                      establecidas por la Superintendencia de IndusHGVy Comercio.
+                      La Empresa HGV garantiza el cumplimiento legal establecido
                       en la Ley 1581 de 2012 “Por la cual se dictan disposiciones generales para la protección
                       de datos personales” y a la Ley 1480 de 2011, en especial en lo referente a los “Derechos
                     y deberes de los consumidores y usuarios” (Art. 3).</p>
@@ -97,7 +97,7 @@
                       <h2 class="title-p">CONDICIONES DE USO</h2>
                       <ul class="tabs">
                         <li class="title-tabs">Responsabilidad</li>
-                        <li class="desc-tab">TRIA deja expresa constancia de que la información recibida de los usuarios es
+                        <li class="desc-tab">HGV deja expresa constancia de que la información recibida de los usuarios es
                           utilizada única y exclusivamente para el desarrollo y actualización de la información de su aplicativo móvil y no
                           asume responsabilidad de ninguna naturaleza por el manejo, difusión, modificación o aplicación que de la
                           misma hagan los usuarios, quienes expresamente aceptan que asumen de manera personal y directa la
@@ -105,7 +105,7 @@
                         el sólo hecho de que el usuario firme el contrato establecido</li>
 
                         <li class="title-tabs">Confidencialidad </li>
-                        <li class="desc-tab">TRIA garantiza la confidencialidad en el manejo de la información recibida por los
+                        <li class="desc-tab">HGV garantiza la confidencialidad en el manejo de la información recibida por los
                         usuarios y ésta sólo es utilizada para fines de la creación, actualización, implementación de su aplicativo móvil</li>
 
                         <li class="title-tabs">Derechos de Autor</li>
@@ -120,15 +120,15 @@
                     <p class="col-md-12 politicas-p">
                       Estas condiciones generales (en adelante, las "Condiciones Generales") regulan el uso de
                       la plataforma web en la cual se administra la información de los conjuntos residenciales a
-                      través de la cual, el aplicativo móvil TRIA, se implementa con los clientes con
+                      través de la cual, el aplicativo móvil HGV, se implementa con los clientes con
                       los que se ha suscrito el contrato de prestación del servicio para la “IMPLEMENTACION
-                      DEL APLICATIVO MÓVIL “TRIA” Y MANTENIMIENTO DE LA PLATAFORMA”.
+                      DEL APLICATIVO MÓVIL HGV Y MANTENIMIENTO DE LA PLATAFORMA”.
                       Se regula también el uso del portal web www.aplicativomovilglobal.com (en adelante, el
-                      "Portal") que TRIA. (en adelante, "TRIA") pone a
+                      "Portal") que HGV. (en adelante, "HGV") pone a
                       disposición de los Clientes. La utilización del Portal atribuye la condición de usuario del
                       Portal (en adelante, el "Usuario") y expresa la aceptación plena y sin reservas del Usuario
                       de todas y cada una de las Condiciones Generales en la versión publicada por
-                      TRIA en el momento mismo en que el Usuario acceda al Portal. En
+                      HGV en el momento mismo en que el Usuario acceda al Portal. En
                       consecuencia, el Usuario debe leer atentamente las Condiciones Generales en cada una
                       de las ocasiones en que se proponga utilizar el Portal. La utilización de los servicios
                       ofrecidos a los Usuarios a través del Portal se encuentra sometida a condiciones
@@ -137,16 +137,16 @@
                       la utilización de dichos servicios, por tanto, el Usuario también ha de leer atentamente las
                       correspondientes Condiciones Particulares. Asimismo, la utilización del Servicio se
                       encuentra sometida igualmente a todos los avisos, reglamentos de uso e instrucciones
-                      puestos en conocimiento del Usuario por TRIA, que completan lo previsto en
+                      puestos en conocimiento del Usuario por HGV, que completan lo previsto en
                       estas Condiciones Generales en cuanto no se opongan a ellas. 2. OBJETO A través del
-                      Portal, TRIA, facilita a los Usuarios el acceso y la utilización del servicio
-                      ofrecido y contenidos puestos a disposición de los Usuarios por TRIA o por
+                      Portal, HGV, facilita a los Usuarios el acceso y la utilización del servicio
+                      ofrecido y contenidos puestos a disposición de los Usuarios por HGV o por
                       terceros usuarios del Portal y/o terceros proveedores de servicios y contenidos (en
-                      adelante, los "Servicios"). TRIA se reserva el derecho a modificar
+                      adelante, los "Servicios"). HGV se reserva el derecho a modificar
                       unilateralmente, en cualquier momento y sin aviso previo, la presentación y configuración
                       del Portal, así como los Servicios y las condiciones requeridas para utilizar el Portal y los
                       Servicios. 3. CONDICIONES DE ACCESO Y UTILIZACIÓN DEL PORTAL 3.1.La
-                      prestación del servicio de Portal por parte de TRIA está regulado por el
+                      prestación del servicio de Portal por parte de HGV está regulado por el
                       contrato de prestación de servicios suscrito y exige la previa suscripción o registro del
                       Usuario. 3.2. Obligación de hacer un uso correcto del Portal y del Servicio: El Cliente se
                       compromete a utilizar el Portal y el servicio acordado de conformidad con la ley, estas
@@ -171,7 +171,7 @@
                       cualquier modalidad de comunicación pública, transformar o modificar los Contenidos, a
                       menos que se cuente con la autorización del titular de los correspondientes derechos o
                       ello resulte legalmente permitido; (c) suprimir, eludir o manipular el "copyright" y demás
-                      datos identificativos de los derechos de autor de TRIA o de sus titulares
+                      datos identificativos de los derechos de autor de HGV o de sus titulares
                       incorporados a los Contenidos, así como los dispositivos técnicos de protección, las
                       huellas digitales o cualesquiera mecanismos de información que pudieren contener los
                       Contenidos; (d) emplear los Contenidos y, en particular, la información de cualquier clase
@@ -190,24 +190,24 @@
                       se creará un browser ni un border environment sobre las páginas web del Portal; (d) no se
                       realizarán manifestaciones o indicaciones falsas, inexactas o incorrectas sobre las
                       páginas web del Portal y los Servicios y, en particular, no se declarará ni dará a entender
-                      que TRIA ha autorizado el Hiperenlace o que ha supervisado o asumido de
+                      que HGV ha autorizado el Hiperenlace o que ha supervisado o asumido de
                       cualquier forma los contenidos o servicios ofrecidos o puestos a disposición de la página
                       web en la que se establece el Hiperenlace; (e) excepción hecha de aquellos signos que
                       formen parte del mismo Hiperenlace, la página web en la que se establezca el
                       Hiperenlace no contendrá ninguna marca, nombre comercial, rótulo de establecimiento,
                       denominación, logotipo, eslogan u otros signos distintivos pertenecientes a
-                      TRIA; (f) la página web en la que se establezca el Hiperenlace no contendrá
+                      HGV; (f) la página web en la que se establezca el Hiperenlace no contendrá
                       informaciones o contenidos ilícitos, contrarios a la moral y buenas costumbres
                       generalmente aceptadas y al orden público, así como tampoco contendrá contenidos
                       contrarios a cualesquiera derechos de terceros. El establecimiento del Hiperenlace no
-                      implica en ningún caso la existencia de relaciones entre TRIA y el propietario
+                      implica en ningún caso la existencia de relaciones entre HGV y el propietario
                       de la página web en la que se establezca, ni la aceptación y aprobación por parte de
-                      TRIA de sus contenidos o servicios. 3.6 Responsabilidad por daños y
+                      HGV de sus contenidos o servicios. 3.6 Responsabilidad por daños y
                       perjuicios: El Cliente / Usuario responderá de los daños y perjuicios de toda naturaleza
-                      que TRIA pueda sufrir, directa o indirectamente, como consecuencia de
+                      que HGV pueda sufrir, directa o indirectamente, como consecuencia de
                       incumplimiento de cualquiera de las obligaciones derivadas de las Condiciones Generales
                       o de la ley en relación con la utilización del Portal. 4. DATOS DE CARÁCTER
-                      PERSONAL. TRIA garantiza el cumplimiento legal establecido en la Ley 1581
+                      PERSONAL. HGV garantiza el cumplimiento legal establecido en la Ley 1581
                       de 2012 “Por la cual se dictan disposiciones generales para la protección de datos
                       personales” y a la Ley 1480 de 2011, en especial en lo referente a los “Derechos y
                       deberes de los consumidores y usuarios” (Art. 3).5.4 Condiciones especiales, Las
@@ -215,7 +215,7 @@
                       GENERAL. El Cliente /Usuario autoriza el envío de publicidad e información de interés de
                       la Ciudad y de localidad a la cual pertenece el (los) conjunto (s) residencial (es), en caso
                       contrario está en libertad de hacerlo saber a través del portal web.
-                      Copyright © 2017 TRIA
+                      Copyright © 2017 HGV
                     </p>
                   </div>
                 </div>
@@ -231,7 +231,7 @@
           <div class="container">
             <div class="row">
               <div class="col-4">
-                <p class="mb-0">2018 TODOS LOS DERECHOS RESERVADOS © -TRIA</p>
+                <p class="mb-0">2018 TODOS LOS DERECHOS RESERVADOS © -HGV</p>
               </div>
               <div class="col-md-4 text-center">
                 <p class="arvin-copyright-info"><a href="/politicas">Términos y Condiciones</a></p>

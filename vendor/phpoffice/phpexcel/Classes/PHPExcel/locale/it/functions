@@ -1,6 +1,7 @@
 ##
 ## PHPExcel
-##
+##
+
 ## Copyright (c) 2006 - 2013 PHPExcel
 ##
 ## This library is free software; you can redistribute it and/or
@@ -377,7 +378,7 @@ PROB			= PROBABILITÀ			##	Calcola la probabilità che dei valori in un interval
 QUARTILE		= QUARTILE			##	Restituisce il quartile di un insieme di dati
 RANK			= RANGO				##	Restituisce il rango di un numero in un elenco di numeri
 RSQ			= RQ				##	Restituisce la radice quadrata del coefficiente di momento di correlazione di Pearson
-SKEW			= ASIMMETRIA			##	Restituisce il grado di asimmetria di una distribuzione
+SKEW			= ASIMMETRIA			##	Restituisce il grado di asimmeHGVdi una distribuzione
 SLOPE			= PENDENZA			##	Restituisce la pendenza di una retta di regressione lineare
 SMALL			= PICCOLO			##	Restituisce il k-esimo valore più piccolo in un insieme di dati
 STANDARDIZE		= NORMALIZZA			##	Restituisce un valore normalizzato
