@@ -69,10 +69,6 @@
                     </a>
                 </li>
 
-
-
-
-
             </ul>
 
             <ul class="list-unstyled" data-link="menu">
@@ -98,6 +94,18 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{url('/administrador/encuesta')}}">
+                        <i class="simple-icon-book-open"></i> Encuestas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{url('/administrador/asistencia')}}">
+                        <i class="simple-icon-exclamation"></i> Asistencia
+                    </a>
+                </li>
+
 
                 <li class="titulo_en_sub_menu">
                     Censo Conjunto
@@ -108,6 +116,8 @@
                         <i class="iconsmind-Dog"></i> Mascotas Conjunto
                     </a>
                 </li>
+
+
 
                 <li>
                     <a href="{{url('/administrador/censos/vehiculos')}}">

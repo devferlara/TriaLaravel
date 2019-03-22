@@ -59,6 +59,7 @@
             <h1 style="margin:0"><span class="semi-bold">{{ $conjunto->first()->nombre}}</span></h1>
             <br>
             {!!link_to_route('administrador.conjuntos.edit', $title = 'Editar Perfl Conjunto', $parameters = $conjunto->first()->id, $attributes = ['class'=>'btn btn-primary'])!!}
+            <a href="conjuntos/preguntas/">Agregar preguntas</a>
             <input type="hidden" id="map_latitud" value="{{ $conjunto->first()->map_latitud }}">
             <input type="hidden" id="map_longitud" value="{{ $conjunto->first()->map_longitud }}">
           </div>

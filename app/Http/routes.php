@@ -13,9 +13,21 @@ Route::get('/politicas', function () {
     return view('home.politicas');
 });
 
+
+// ruta para el web service
+Route::resource('/web_service/','WebserviceController');
+Route::get('webservice/{idUser}','WebserviceController@index2');
+
+
+// ruta para el guardar encuestas
+Route::resource('/guardar_encuesta/','GuardarencuestaController');
+
+
+
+
 Route::get('/prueba', function () {
     return view('backend.administrador.prueba');
-});
+}); 
 
 /* Redirecciona hacia la pagina de contacto*/
 Route::post('/contact','HomeController@contact');
@@ -233,13 +245,47 @@ Route::group(array('middleware' => 'auth'), function()
             Route::get('/', function () {
                 return view('backend.administrador.index');
             });
+
             // Ruta Restfull usuarios creación desde el administrador
             Route::resource('usuarios','UsuarioController');
             Route::get('usuarios/{id}/delete','UsuarioController@delete'); //borrado
             //Route::get('buscar','UsuarioController@buscar1'); //busqueda
             
+
+            // ruta para encuestas
+            
+            Route::resource('encuestas','EncuestasController');
+            Route::resource('encuesta','EncuestasController@index2');
+            Route::get('encuestas/delete-encuesta/{id}','EncuestasController@editarEstado');
+
+            Route::resource('asistencia','AsistenciasController');
+            Route::get('asistencia/eliminar/{id}','AsistenciasController@editarEstado');
+            Route::get('asistencia/terminar/{id}','AsistenciasController@terminar');
+            Route::get('asistencia/ver/{id}','AsistenciasController@verasistencias');
+            Route::get('asistencia/web-service/{id}','AsistenciasController@webservice');
+            Route::get('asistencia/save-data/{id}','AsistenciasController@savedata');
+
+            Route::resource('estadisticas/','EstadisticasController');
+            Route::get('estadistic/{idEncuesta}','EstadisticasController@index2');
+
+            Route::resource('preguntas','PreguntasController');
+            Route::get('preg/{idEncuesta}','PreguntasController@index2');
+            Route::get('Preg/delete/{idEncuesta}','PreguntasController@editarEstado');
+
+            Route::resource('respuestas','RespuestasController');
+            Route::get('resp/{idPregunta}','RespuestasController@index2');
+            Route::get('resp/delete/{id}/','RespuestasController@destroy');
+            
+            /*
+            Route::resource('encuestas','EncuestasController');
+
+            Route::get('encuestas/preguntas/{id}','EncuestasController@preguntasIndex');            
+            Route::get('encuestas/preguntas/{id}','EncuestasController@preguntasIndex');            
+            */
+
             // Ruta Restfull para zonas
             Route::resource('zonas','ZonaController');
+
             Route::get('zonas/{id}/delete','ZonaController@delete');
             //Lista las zonas para su uso mediante Ajax
             Route::get('zonas/listar', 'ZonaController@getZonas');
