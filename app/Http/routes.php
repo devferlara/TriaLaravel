@@ -257,7 +257,7 @@ Route::group(array('middleware' => 'auth'), function()
             Route::resource('encuestas','EncuestasController');
             Route::resource('encuesta','EncuestasController@index2');
             Route::get('encuestas/delete-encuesta/{id}','EncuestasController@editarEstado');
-
+            
             Route::resource('asistencia','AsistenciasController');
             Route::get('asistencia/eliminar/{id}','AsistenciasController@editarEstado');
             Route::get('asistencia/terminar/{id}','AsistenciasController@terminar');

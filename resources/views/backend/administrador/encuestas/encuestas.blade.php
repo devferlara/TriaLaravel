@@ -33,14 +33,14 @@
 						<div class="col-md-3">
 							<div class="form-group has-float-label mb-4" >
 								<label for="archivo" class="form-label">Nombre</label>
-								{!!Form::text ('nombre', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
+								{!!Form::text ('nombre', null, ['required'=>'required','class'=>'form-control'])!!}
 							</div>
 						</div>
 
 						<div class="col-md-3">
 							<div class="form-group has-float-label mb-4" >
 								<label for="archivo" class="form-label">Descripción</label>
-								{!!Form::text ('descripcion', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
+								{!!Form::text ('descripcion', null, ['required'=>'required','class'=>'form-control'])!!}
 							</div>
 						</div>
 

@@ -32,7 +32,7 @@
 						<div class="col-md-9">
 							<div class="form-group has-float-label mb-4 " >
 								<label for="archivo" class="form-label">Evento</label>
-								{!!Form::text ('evento', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
+								{!!Form::text ('evento', null, ['required'=>'required','class'=>'form-control'])!!}
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -70,12 +70,12 @@
 										@if($asistencias->Active == 1)
 										Activo
 										@else
-										terminado
+										Finalizado
 										@endif
 
 									</td>
 									<td>
-										<a href="asistencia/ver/{{$asistencias->id}}" class="btn btn-success btn-xs mb-1" data-toggle="tooltip" data-placement="bottom" data-original-title="terminar">
+										<a href="asistencia/ver/{{$asistencias->id}}" class="btn btn-success btn-xs mb-1" data-toggle="tooltip" data-placement="bottom" data-original-title="Ver">
 											<i class="simple-icon-eye"></i>
 										</a>
 										@if($asistencias->Active == 2)

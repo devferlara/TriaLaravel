@@ -33,7 +33,7 @@
 						<div class="col-md-9">
 							<div class="form-group has-float-label mb-4 " >
 								<label for="archivo" class="form-label">Nueva pregunta</label>
-								{!!Form::text ('pregunta', null, ['required'=>'required','class'=>'form-control', 'placeholder'=>'Ingresa su Nombre'])!!}
+								{!!Form::text ('pregunta', null, ['required'=>'required','class'=>'form-control'])!!}
 							</div>
 						</div>
 						<div class="col-md-3">

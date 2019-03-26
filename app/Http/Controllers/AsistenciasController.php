@@ -151,15 +151,22 @@ class AsistenciasController extends Controller
         ->join('usuarios as U', 'U.id', '=', 'R.id_usuario')
         ->select('U.nombres as nombres', 'U.apellidos as apellidos', 'U.email as email','U.telefono as telefono')
         ->where('A.id', '=', $id)
+        ->where('A.Active', '>', 0)
         ->where('A.id_usuario', '=', $user->id)
         ->get();
 
+        if (count($datos) != 0 ) {
+        }else{
+            return back();
+        }
+        
         $nombre_evento = DB::table('asistencias as R')
         ->select('R.Nombre as nombre')
         ->where('R.id', '=', $id)
          ->where('R.id_usuario', '=', $user->id)
         ->get();
-        if (count($nombre_evento) != 0) {
+
+        if (count($nombre_evento) != 0 ) {
         }else{
             return back();
         }

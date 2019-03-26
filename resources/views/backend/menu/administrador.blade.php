@@ -102,7 +102,7 @@
 
                 <li>
                     <a href="{{url('/administrador/asistencia')}}">
-                        <i class="simple-icon-exclamation"></i> Asistencia
+                        <i class="simple-icon-user-following"></i> Asistencia
                     </a>
                 </li>
 

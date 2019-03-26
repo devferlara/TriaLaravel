@@ -39,7 +39,6 @@ class EstadisticasController extends Controller
         ->where('id_usuario', '=', $user->id)
         ->get();
         if (count($encuestas) != 0) {
-            
         }else{
             return Redirect::to('/administrador/encuesta/');
         }

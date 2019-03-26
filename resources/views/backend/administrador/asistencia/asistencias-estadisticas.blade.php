@@ -1,14 +1,10 @@
 @extends('layout.mensajes')
 
-<!-- Create General Section Sidebar -->
 @section('sidebar')
-<!-- Include the menu -->
 @include('backend.menu.administrador')
 @stop
 
-<!-- Create General Section Header -->
 @section('head')
-<!-- Include the profile header -->
 @include('layout.head')
 
 @stop
